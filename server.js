@@ -72,4 +72,6 @@ app.get('/mysteries/bolesne', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`My DB run on ${port} port`));
+app.listen(port, () => {
+    console.log(`My DB run on ${port} port`);
+});

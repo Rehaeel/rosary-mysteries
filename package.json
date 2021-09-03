@@ -19,7 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "dev": "nodemon server"
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
