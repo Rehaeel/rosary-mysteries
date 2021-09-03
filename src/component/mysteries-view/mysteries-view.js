@@ -3,7 +3,7 @@ import React from 'react'
 import './mysteries-view.css';
 
 
-const endpoint = 'http://localhost:4000/mysteries';
+const endpoint = process.env.DB;
 
 // let startDay = Math.floor(Date.now() / 86400000);
 // let daySpent = Math.floor(Date.now() / 86400000) % startDay;
