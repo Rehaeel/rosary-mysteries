@@ -31,23 +31,39 @@ export default class MysteriesView extends React.Component {
             chwalebneCounter: response.data[1].state,
             swiatlaCounter: response.data[2].state,
             bolesneCounter: response.data[3].state,
-        })
+        });
+        // console.log(this.state.radosneCounter);
+        // console.log(this.state.chwalebneCounter);
+        // console.log(this.state.swiatlaCounter);
+        // console.log(this.state.bolesneCounter);
     };
-    async fetchMysteries() {
-        let response = await axios.get(endpoint + this.state.part)
-        this.setState({ mysteries: response.data })
-    };
-    async partChoose() {
+
+
+    partChoose() {
         let today = new Date().getDay();
         if (today === 1 || today === 6) {
-            this.setState({ part: '/radosne' })
+            this.setState({ part: '/radosne' }, function () {
+                console.log(this.state.part);
+            });
         } else if (today === 2 || today === 5) {
-            this.setState({ part: '/bolesne' })
+            this.setState({ part: '/bolesne' }, function () {
+                console.log(this.state.part);
+            });
         } else if (today === 3 || today === 0) {
-            this.setState({ part: '/chwalebne' })
+            this.setState({ part: '/chwalebne' }, function () {
+                console.log(this.state.part);
+            });
         } else if (today === 4) {
-            this.setState({ part: '/swiatla' })
+            this.setState({ part: '/swiatla' }, function () {
+                console.log(this.state.part);
+            });
         }
+        console.log(today);
+    };
+
+    async fetchMysteries() {
+        let response = await axios.get(endpoint + this.state.part);
+        return this.setState({ mysteries: response.data });
     };
 
     returnedMystery() {
@@ -58,12 +74,12 @@ export default class MysteriesView extends React.Component {
         // a
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
         this.fetchState();
-        this.fetchMysteries();
         this.partChoose();
-        this.returnedMystery();
-    };
+        this.fetchMysteries();
+        console.log(this.state.part);
+    }
 
     render() {
         return (
