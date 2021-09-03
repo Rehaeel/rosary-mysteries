@@ -2,15 +2,19 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql');
 const cors = require('cors');
+require('dotenv').config();
 const port = 4000;
+
+console.log(process.env);
+
 
 app.use(cors());
 app.use(express.json());
 const mystery = mysql.createConnection({
-    user: process.env.REACT_APP_DB_USER,
-    host: process.env.REACT_APP_DB_HOST,
-    password: process.env.REACT_APP_DB_PASSWORD,
-    database: process.env.REACT_APP_DB_DATABASE
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DATABASE
 });
 
 /////////// STAN
