@@ -3,7 +3,7 @@ const app = express();
 const mysql = require('mysql');
 const cors = require('cors');
 require('dotenv').config();
-const port = 4000;
+const PORT = 4000;
 
 app.use(cors());
 app.use(express.json());
@@ -69,6 +69,6 @@ app.get('/mysteries/bolesne', (req, res) => {
     });
 });
 
-app.listen(port, () => {
-    console.log(`My DB run on ${port} port`);
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`My DB run on ${PORT} port`);
 });
