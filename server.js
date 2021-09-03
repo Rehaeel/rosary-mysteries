@@ -5,9 +5,6 @@ const cors = require('cors');
 require('dotenv').config();
 const port = 4000;
 
-console.log(process.env);
-
-
 app.use(cors());
 app.use(express.json());
 const mystery = mysql.createConnection({
