@@ -40,25 +40,26 @@ export default class MysteriesView extends React.Component {
 
 
     partChoose() {
-        let today = new Date().getDay();
-        if (today === 1 || today === 6) {
-            this.setState({ part: '/radosne' }, function () {
-                console.log(this.state.part);
-            });
-        } else if (today === 2 || today === 5) {
-            this.setState({ part: '/bolesne' }, function () {
-                console.log(this.state.part);
-            });
-        } else if (today === 3 || today === 0) {
-            this.setState({ part: '/chwalebne' }, function () {
-                console.log(this.state.part);
-            });
-        } else if (today === 4) {
-            this.setState({ part: '/swiatla' }, function () {
-                console.log(this.state.part);
-            });
-        }
-        console.log(today);
+        // let today = new Date().getDay();
+        // if (today === 1 || today === 6) {
+        //     this.setState({ part: '/radosne' }, function () {
+        //         console.log(this.state.part);
+        //     });
+        // } else if (today === 2 || today === 5) {
+        //     this.setState({ part: '/bolesne' }, function () {
+        //         console.log(this.state.part);
+        //     });
+        // } else if (today === 3 || today === 0) {
+        //     this.setState({ part: '/chwalebne' }, function () {
+        //         console.log(this.state.part);
+        //     });
+        // } else if (today === 4) {
+        //     this.setState({ part: '/swiatla' }, function () {
+        //         console.log(this.state.part);
+        //     });
+        // }
+        // console.log(today);
+        this.setState({ part: '/bolesne' });
     };
 
     async fetchMysteries() {
