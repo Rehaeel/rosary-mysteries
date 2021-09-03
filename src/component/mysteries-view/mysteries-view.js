@@ -2,8 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import './mysteries-view.css';
 
-
-const endpoint = process.env.DB;
+const endpoint = process.env.REACT_APP_DB_URL;
 
 // let startDay = Math.floor(Date.now() / 86400000);
 // let daySpent = Math.floor(Date.now() / 86400000) % startDay;
@@ -38,7 +37,7 @@ export default class MysteriesView extends React.Component {
         let response = await axios.get(endpoint + this.state.part)
         this.setState({ mysteries: response.data })
     };
-    partChoose() {
+    async partChoose() {
         let today = new Date().getDay();
         if (today === 1 || today === 6) {
             this.setState({ part: '/radosne' })
@@ -52,8 +51,7 @@ export default class MysteriesView extends React.Component {
     };
 
     returnedMystery() {
-        let response = axios.get(endpoint + this.state.part);
-        console.log(response)
+        // let response = axios.get(endpoint + this.state.part);
         // let request = axios.post(endpoint + this.state.part, data: {
         // 
         // })
