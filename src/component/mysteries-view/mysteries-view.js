@@ -1,11 +1,9 @@
 import axios from 'axios';
 import React from 'react'
 import './mysteries-view.css';
+import { returnMystery } from './calculates.js';
 
 const endpoint = process.env.REACT_APP_DB_URL;
-
-// let startDay = Math.floor(Date.now() / 86400000);
-// let daySpent = Math.floor(Date.now() / 86400000) % startDay;
 
 export default class MysteriesView extends React.Component {
     constructor(props) {
@@ -21,7 +19,6 @@ export default class MysteriesView extends React.Component {
         this.fetchState = this.fetchState.bind(this);
         this.fetchMysteries = this.fetchMysteries.bind(this);
         this.partChoose = this.partChoose.bind(this);
-        this.returnedMystery = this.returnedMystery.bind(this);
     }
 
     partChoose() {
@@ -43,7 +40,6 @@ export default class MysteriesView extends React.Component {
                 console.log(this.state.part);
             });
         }
-        // console.log(today);
     };
 
     async fetchState() {
@@ -61,15 +57,11 @@ export default class MysteriesView extends React.Component {
         return this.setState({ mysteries: response.data });
     };
 
-    returnedMystery() {
-
-    }
-
     componentDidMount = async () => {
+        returnMystery();
         this.partChoose();
         await this.fetchState();
         await this.fetchMysteries();
-        console.log(this.state.part);
     }
 
     render() {
