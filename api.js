@@ -25,6 +25,18 @@ app.get('/mysteries/state', (req, res) => {
     });
 });
 
+/////////// STARTING DAY
+app.get('/mysteries/startingday', (req, res) => {
+    mystery.query('SELECT * FROM startingDay', (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    });
+});
+
+
 /////////// RADOSNE
 app.get('/mysteries/radosne', (req, res) => {
     mystery.query('SELECT * FROM mysteries WHERE part="radosne"', (err, result) => {
