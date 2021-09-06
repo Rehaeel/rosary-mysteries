@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import './mysteries-view.css';
-import { returnMystery } from './calculates.js';
+import { returnMystery, StartingDay } from './calculates.js';
 
 const endpoint = process.env.REACT_APP_DB_URL;
 
@@ -67,6 +67,7 @@ export default class MysteriesView extends React.Component {
     render() {
         return (
             <div className="mysteries-view" >
+                <StartingDay />
                 <h1>Dzisiejsza tajemnica:</h1>
                 <div>
                     {/* <h3>{this.returnedMystery}</h3> */}
