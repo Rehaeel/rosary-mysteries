@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node api.js",
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon api.js"
   },
   "eslintConfig": {
     "extends": [
