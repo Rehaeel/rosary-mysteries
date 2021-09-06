@@ -24,6 +24,28 @@ export default class MysteriesView extends React.Component {
         this.returnedMystery = this.returnedMystery.bind(this);
     }
 
+    partChoose() {
+        let today = new Date().getDay();
+        if (today === 1 || today === 6) {
+            this.setState({ part: '/radosne' }, function () {
+                // console.log(this.state.part);
+            });
+        } else if (today === 2 || today === 5) {
+            this.setState({ part: '/bolesne' }, function () {
+                console.log(this.state.part);
+            });
+        } else if (today === 3 || today === 0) {
+            this.setState({ part: '/chwalebne' }, function () {
+                console.log(this.state.part);
+            });
+        } else if (today === 4) {
+            this.setState({ part: '/swiatla' }, function () {
+                console.log(this.state.part);
+            });
+        }
+        // console.log(today);
+    };
+
     async fetchState() {
         let response = await axios.get(endpoint + '/state')
         this.setState({
@@ -32,34 +54,6 @@ export default class MysteriesView extends React.Component {
             swiatlaCounter: response.data[2].state,
             bolesneCounter: response.data[3].state,
         });
-        // console.log(this.state.radosneCounter);
-        // console.log(this.state.chwalebneCounter);
-        // console.log(this.state.swiatlaCounter);
-        // console.log(this.state.bolesneCounter);
-    };
-
-
-    partChoose() {
-        // let today = new Date().getDay();
-        // if (today === 1 || today === 6) {
-        //     this.setState({ part: '/radosne' }, function () {
-        //         console.log(this.state.part);
-        //     });
-        // } else if (today === 2 || today === 5) {
-        //     this.setState({ part: '/bolesne' }, function () {
-        //         console.log(this.state.part);
-        //     });
-        // } else if (today === 3 || today === 0) {
-        //     this.setState({ part: '/chwalebne' }, function () {
-        //         console.log(this.state.part);
-        //     });
-        // } else if (today === 4) {
-        //     this.setState({ part: '/swiatla' }, function () {
-        //         console.log(this.state.part);
-        //     });
-        // }
-        // console.log(today);
-        this.setState({ part: '/bolesne' });
     };
 
     async fetchMysteries() {
@@ -68,17 +62,13 @@ export default class MysteriesView extends React.Component {
     };
 
     returnedMystery() {
-        // let response = axios.get(endpoint + this.state.part);
-        // let request = axios.post(endpoint + this.state.part, data: {
-        // 
-        // })
-        // a
+
     }
 
-    componentDidMount = () => {
-        this.fetchState();
+    componentDidMount = async () => {
         this.partChoose();
-        this.fetchMysteries();
+        await this.fetchState();
+        await this.fetchMysteries();
         console.log(this.state.part);
     }
 
