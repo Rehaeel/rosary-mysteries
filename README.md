@@ -5,3 +5,5 @@ npm install cors --save
 npm install express --save
 npm install mysql --save
 npm install dotenv --save
+
+npm i axios cors express mysql dotenv --save
