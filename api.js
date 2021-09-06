@@ -36,6 +36,10 @@ app.get('/startingday', (req, res) => {
     });
 });
 
+app.put('/startingday', (req, res) => {
+    mystery.query(`UPDATE startingDay SET startingDay = ? WHERE id = 1`);
+})
+
 
 /////////// RADOSNE
 app.get('/radosne', (req, res) => {
