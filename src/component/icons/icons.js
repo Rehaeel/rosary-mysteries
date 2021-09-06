@@ -1,12 +1,8 @@
-import React from 'react'
 import './default.css';
+import { Component as Rose } from './rose.svg'
 
-export default class Default extends React.Component {
-    render() {
-        return (
-            <div className="icons">
-
-            </div>
-        )
-    }
+let icons = {
+    Rose,
 }
+
+export default icons;
