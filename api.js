@@ -15,7 +15,7 @@ const mystery = mysql.createConnection({
 });
 
 /////////// STAN
-app.get('/mysteries/state', (req, res) => {
+app.get('/state', (req, res) => {
     mystery.query('SELECT * FROM mysteriesState', (err, result) => {
         if (err) {
             console.log(err);
@@ -26,7 +26,7 @@ app.get('/mysteries/state', (req, res) => {
 });
 
 /////////// STARTING DAY
-app.get('/mysteries/startingday', (req, res) => {
+app.get('/startingday', (req, res) => {
     mystery.query('SELECT * FROM startingDay', (err, result) => {
         if (err) {
             console.log(err);
@@ -38,7 +38,7 @@ app.get('/mysteries/startingday', (req, res) => {
 
 
 /////////// RADOSNE
-app.get('/mysteries/radosne', (req, res) => {
+app.get('/radosne', (req, res) => {
     mystery.query('SELECT * FROM mysteries WHERE part="radosne"', (err, result) => {
         if (err) {
             console.log(err);
@@ -49,7 +49,7 @@ app.get('/mysteries/radosne', (req, res) => {
 });
 
 /////////// CHWALEBNE
-app.get('/mysteries/chwalebne', (req, res) => {
+app.get('/chwalebne', (req, res) => {
     mystery.query('SELECT * FROM mysteries WHERE part="chwalebne"', (err, result) => {
         if (err) {
             console.log(err);
@@ -60,7 +60,7 @@ app.get('/mysteries/chwalebne', (req, res) => {
 });
 
 /////////// ŚWIATŁA
-app.get('/mysteries/swiatla', (req, res) => {
+app.get('/swiatla', (req, res) => {
     mystery.query('SELECT * FROM mysteries WHERE part="swiatla"', (err, result) => {
         if (err) {
             console.log(err);
@@ -71,7 +71,7 @@ app.get('/mysteries/swiatla', (req, res) => {
 });
 
 /////////// BOLESNE
-app.get('/mysteries/bolesne', (req, res) => {
+app.get('/bolesne', (req, res) => {
     mystery.query('SELECT * FROM mysteries WHERE part="bolesne"', (err, result) => {
         if (err) {
             console.log(err);
