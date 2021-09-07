@@ -5,7 +5,6 @@ import React from "react";
 // let daySpent = Math.floor(Date.now() / 86400000) % startDay;
 
 export function returnMystery() {
-    console.log(new Date);
 }
 
 export class StartingDay extends React.Component {
@@ -13,14 +12,20 @@ export class StartingDay extends React.Component {
         super(props);
         this.state = {
             buttonVisibility: true,
-            start: '2021.09.01'
+            start: '2021-09-01'
         }
         this.PUTStartingDay = this.PUTStartingDay.bind(this);
     }
 
     async PUTStartingDay() {
-        let today = new Date;
-        await axios.put(process.env.REACT_APP_DB_URL + '/startingday', `UPDATE startingDay SET startingDay = ${today} WHERE id = 1`);
+        let date = new Date();
+        let dateYear = date.getFullYear();
+        let dateMonth = ("0" + (date.getMonth() + 1)).slice(-2);
+        let dateDay = ("0" + date.getDate()).slice(-2);
+
+        let today = dateYear + "-" + dateMonth + "-" + dateDay;
+
+        await axios.put(process.env.REACT_APP_DB_URL + `/startingday/${today}`);
         this.setState({ buttonVisibility: false });
     }
 
