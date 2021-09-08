@@ -1,0 +1,45 @@
+.alert-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    background-color: #fff;
+    z-index: 100;
+    padding: var(--padding);
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 0 15px 20px rgba(0,0,0,0.1);
+}
+
+.alert>h2 {
+    grid-column: 1 / -1;
+    margin-block: 0;
+    color: #000;
+}
+
+.alert button {
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    color: #fff;
+    cursor:pointer;
+}
+
+.alert button:first-of-type {
+    background: var(--red-color);
+}
+
+.alert button:last-of-type {
+    background: #008A10;
+}

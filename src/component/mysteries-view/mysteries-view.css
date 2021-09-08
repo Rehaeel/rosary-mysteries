@@ -5,7 +5,7 @@
     grid-template-rows: max-content;
     justify-items: center;
     width: min(600px, calc(85% - 80px));
-    height: min(800px, calc(85% - 80px));
+    height: fit-content;
     background-color: #fff;
     box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
     border-radius: 30px;
@@ -16,12 +16,26 @@
 
 .mysteries-view>h1 {
     width: fit-content;
-    filter: drop-shadow( 4px 4px 8px #0048b42f);
-
+    filter: drop-shadow( 4px 4px 8px #0048b41f);
 }
 
-.mysteries-view>div:last-of-type {
-    align-self: start;
+.mysteries-view p:first-of-type {
+    position:absolute;
+    top:0;
+    color: rgba(0,0,0,0.35);
+}
+
+.mysteries-view h3,
+.mysteries-view h2 {
+    text-align: center;
+}
+
+.mysteries-view h3 {
+    color: rgba(0,0,0,0.65);
+}
+
+.mysteries-view>div {
+    align-self: center;
 }
 
 .mysteries-view>img {
@@ -44,7 +58,7 @@
     padding: 15px 30px;
     border-radius: 15px;
     font-size: 0.84em;
-    background-color: #D70040;
+    background-color: var(--red-color);
     color: #fff;
     transition: all .5s ease
 }
