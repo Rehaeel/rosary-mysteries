@@ -11,7 +11,6 @@
     border-radius: 30px;
     padding: 40px;
     color: #000;
-    overflow: hidden;
 }
 
 .mysteries-view>h1 {
@@ -74,6 +73,5 @@
 
 @media screen and (max-width:765px) {
     .mysteries-view {
-        transform:translateY(-50px);
     }
 }
