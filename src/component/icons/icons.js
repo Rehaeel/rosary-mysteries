@@ -1,5 +1,4 @@
-import './default.css';
-import { Component as Rose } from './rose.svg'
+import { ReactComponent as Rose } from './rose.svg'
 
 let icons = {
     Rose,

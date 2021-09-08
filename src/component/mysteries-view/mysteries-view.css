@@ -16,12 +16,27 @@
 
 .mysteries-view>h1 {
     width: fit-content;
-    filter: drop-shadow( 4px 4px 8px #0048b47a);
+    filter: drop-shadow( 4px 4px 8px #0048b42f);
 
 }
 
 .mysteries-view>div:last-of-type {
     align-self: start;
+}
+
+.mysteries-view>img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    max-width: 30px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.mysteries-view>img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 5px 10px #d7004028)
 }
 
 .mysteries-view>button {

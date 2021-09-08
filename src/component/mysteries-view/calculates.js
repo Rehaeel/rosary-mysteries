@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-
+import Rose from "../icons/rose.svg";
 // let startDay = Math.floor(Date.now() / 86400000);
 // let daySpent = Math.floor(Date.now() / 86400000) % startDay;
 
@@ -24,14 +24,16 @@ export class StartingDay extends React.Component {
         let dateDay = ("0" + date.getDate()).slice(-2);
 
         let today = dateYear + "-" + dateMonth + "-" + dateDay;
-
-        await axios.put(process.env.REACT_APP_DB_URL + `/startingday/${today}`);
-        this.setState({ buttonVisibility: false });
+        if (window.confirm('Czy chcesz rozpocząć od nowa?')) {
+            await axios.put(process.env.REACT_APP_DB_URL + `/startingday/${today}`);
+            alert('Ustawiono nową datę rozpoczęcia')
+            this.setState({ buttonVisibility: false });
+        }
     }
 
     render() {
         return (
-            <button onClick={this.PUTStartingDay} style={{ display: this.state.buttonVisibility ? 'block' : 'none' }}>Ustal datę rozpoczęcia</button>
+            <img src={Rose} onClick={this.PUTStartingDay} style={{ display: this.state.buttonVisibility ? 'block' : 'none' }} alt='reset starting day' />
         )
     }
 }
