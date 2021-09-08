@@ -16,6 +16,7 @@
 .mysteries-view>h1 {
     width: fit-content;
     filter: drop-shadow( 4px 4px 8px #0048b41f);
+    text-align: center;
 }
 
 .mysteries-view p:first-of-type {
@@ -73,5 +74,6 @@
 
 @media screen and (max-width:765px) {
     .mysteries-view {
+        transform: translateY(-20px);
     }
 }
