@@ -55,3 +55,11 @@
 .mysteries-view>button:active {
     box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
+
+/********************** MOBILE *********************/
+
+@media screen and (max-width:765px) {
+    .mysteries-view {
+        transform:translateY(-50px);
+    }
+}
