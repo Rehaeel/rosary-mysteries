@@ -21,6 +21,7 @@
 
 .mysteries-view p:first-of-type {
     position:absolute;
+    font-style: italic;
     top:0;
     color: rgba(0,0,0,0.35);
 }
@@ -32,6 +33,7 @@
 
 .mysteries-view h3 {
     color: rgba(0,0,0,0.65);
+    font-style: italic;
 }
 
 .mysteries-view>div {

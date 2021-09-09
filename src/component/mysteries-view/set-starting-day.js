@@ -28,8 +28,8 @@ export default class SetStartingDay extends React.Component {
             buttonVisibility: false,
             alertVisibility: false
         });
-        alert('ustawiono nową datę rozpoczęcia!')
         window.location.reload();
+        alert('ustawiono nową datę rozpoczęcia!')
     }
     showAlert() {
         this.setState({ alertVisibility: true });

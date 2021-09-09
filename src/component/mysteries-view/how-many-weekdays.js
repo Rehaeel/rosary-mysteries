@@ -26,7 +26,7 @@ export default async function HowManyWeekdays(dayOfWeek) {
         let sum = wednesday + sunday;
         return sum;
     } else if (dayOfWeek === 4) {
-        let thursday = getCountOf(startingDay, today, 4);
+        let thursday = getCountOf(startingDay, today, 4) - 1;
         return thursday;
     }
 }
