@@ -32,6 +32,7 @@ export default class MysteriesView extends React.Component {
         } else if (today === 4) {
             this.setState({ part: '/swiatla' });
         }
+        console.log(this.state.part);
     };
 
     async fetchMysteries() {
@@ -43,7 +44,7 @@ export default class MysteriesView extends React.Component {
         let today = new Date().getDay();
         let countMysteries;
         if (today === 1 || today === 6) {
-            countMysteries = await HowManyWeekdays(1);
+            countMysteries = await HowManyWeekdays(1) + await HowManyWeekdays(6) - 1;
             if (countMysteries > 5) {
                 countMysteries = countMysteries % 5;
                 return countMysteries;
@@ -51,7 +52,7 @@ export default class MysteriesView extends React.Component {
                 return countMysteries;
             }
         } else if (today === 2 || today === 5) {
-            countMysteries = await HowManyWeekdays(2);
+            countMysteries = await HowManyWeekdays(2) + await HowManyWeekdays(5) - 1;
             if (countMysteries > 5) {
                 countMysteries = countMysteries % 5;
                 return countMysteries;
@@ -59,7 +60,7 @@ export default class MysteriesView extends React.Component {
                 return countMysteries;
             }
         } else if (today === 3 || today === 0) {
-            countMysteries = await HowManyWeekdays(3);
+            countMysteries = await HowManyWeekdays(3) + await HowManyWeekdays(0) - 1;
             if (countMysteries > 5) {
                 countMysteries = countMysteries % 5;
                 return countMysteries;
@@ -67,7 +68,7 @@ export default class MysteriesView extends React.Component {
                 return countMysteries;
             }
         } else if (today === 4) {
-            countMysteries = await HowManyWeekdays(4);
+            countMysteries = await HowManyWeekdays(4) - 1;
             if (countMysteries > 5) {
                 countMysteries = countMysteries % 5;
                 return countMysteries;
