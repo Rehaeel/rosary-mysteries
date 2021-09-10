@@ -26,18 +26,33 @@
     color: rgba(0,0,0,0.35);
 }
 
-.mysteries-view h3,
-.mysteries-view h2 {
+.mysteries-view>h3,
+.mysteries-view>h2 {
     text-align: center;
 }
 
-.mysteries-view h3 {
+.mysteries-view>h2:first-of-type {
+    width: calc(fit-content + 30px);
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 10px 10px  rgba(0, 72, 180, 0.1);
+    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%) ;
+    padding: 15px 45px;
+    color: #fff;
+    filter: drop-shadow(0 0 2px #000);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.mysteries-view>h3 {
     color: rgba(0,0,0,0.65);
     font-style: italic;
 }
 
-.mysteries-view>div {
-    align-self: center;
+.mysteries-view>h3:nth-of-type(2) {
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+    width: 100%;
 }
 
 .mysteries-view>img {
