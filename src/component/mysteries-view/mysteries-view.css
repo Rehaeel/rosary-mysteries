@@ -6,6 +6,9 @@
     justify-items: center;
     width: 600px;
     height: fit-content;
+    max-height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     background-color: #fff;
     box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
     border-radius: 30px;
@@ -18,7 +21,8 @@
     width: fit-content;
     filter: drop-shadow( 4px 4px 8px #0048b41f);
     text-align: center;
-    word-break: keep-all;
+    width: 150%;
+    margin-top: 30px;
 }
 
 .mysteries-view p:first-of-type {
@@ -114,5 +118,9 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.2);
         width: 100%;
         margin: 10% 8%;
         padding: 6%;
+    }
+
+    .mysteries-view>h1 {
+        margin-bottom: 0;
     }
 }
