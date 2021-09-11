@@ -117,7 +117,7 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.2);
     .mysteries-view {
         width: 100%;
         margin: 10% 8%;
-        padding: 6%;
+        padding: 30px 6%;
     }
 
     .mysteries-view>h1 {
