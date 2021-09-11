@@ -18,6 +18,7 @@
     width: fit-content;
     filter: drop-shadow( 4px 4px 8px #0048b41f);
     text-align: center;
+    word-break: keep-all;
 }
 
 .mysteries-view p:first-of-type {
@@ -103,7 +104,6 @@ transition: all .3s ease;
 }
 
 .szczalka:hover {
-background-color: rgba(0, 133, 255, 0.8);
 box-shadow: 0 0 8px 5px rgba(0,0,0,0.2);
 }
 

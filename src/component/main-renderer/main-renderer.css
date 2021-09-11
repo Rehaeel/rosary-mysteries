@@ -10,6 +10,6 @@
 
 @media screen and (max-width: 765px) {
     .main-renderer {
-        height: fit-content;
+        height: max(fit-content, 100vh);
     }
 }
