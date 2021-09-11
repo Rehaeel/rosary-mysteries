@@ -7,3 +7,9 @@
     align-items: center;
     background: radial-gradient(rgba(0, 133, 255, 0.5), var(--blue-color));
 }
+
+@media screen and (max-width: 765px) {
+    .main-renderer {
+        height: fit-content;
+    }
+}
