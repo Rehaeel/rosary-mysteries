@@ -19,7 +19,8 @@ export default class MysteriesView extends React.Component {
             startingDay: '****-**-**',
             todayMeditation: "...",
             meditationVisibility: false,
-            mysteryFlex: true
+            mysteryFlex: true,
+            mysteryScroll: false
         };
         this.fetchMysteries = this.fetchMysteries.bind(this);
         this.partChoose = this.partChoose.bind(this);
@@ -106,7 +107,8 @@ export default class MysteriesView extends React.Component {
     toggleMeditationVisibility() {
         this.setState({
             meditationVisibility: !this.state.meditationVisibility,
-            mysteryFlex: !this.state.mysteryFlex
+            mysteryFlex: !this.state.mysteryFlex,
+            mysteryScroll: !this.state.mysteryScroll
         });
     }
 
@@ -123,7 +125,8 @@ export default class MysteriesView extends React.Component {
         return (
             <div className="mysteries-view"
                 style={{
-                    justifySelf: this.state.mysteryFlex ? 'center' : 'start'
+                    justifySelf: this.state.mysteryFlex ? 'center' : 'start',
+                    overflowY: this.state.mysteryScroll ? 'scroll' : 'hidden'
                 }}>
                 <p>rozpoczęto dnia: {this.state.startingDay}</p>
                 <SetStartingDay />

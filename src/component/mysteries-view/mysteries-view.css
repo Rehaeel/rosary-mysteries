@@ -6,7 +6,7 @@
     justify-items: center;
     width: 600px;
     height: fit-content;
-    max-height: 90vh;
+    max-height: 90%;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
@@ -18,6 +18,7 @@
 .mysteries-view>h1 {
     width: fit-content;
     filter: drop-shadow( 4px 4px 8px #0048b41f);
+    width: 110%;
     text-align: center;
     margin-top: 30px;
     line-height: 1.2em;
