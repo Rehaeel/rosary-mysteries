@@ -101,19 +101,14 @@
     text-align: center;
     background-color: rgba(215, 0, 64, 0.2);
     padding-bottom: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 8px 5px rgba(0,0,0,0.0);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     margin-top: 10px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    transition: all .3s ease;
 }
 
-.szczalka:hover {
-box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
-}
 
 /********************** MOBILE *********************/
 @media screen and (min-width:765px) and (max-width:980px) {
@@ -122,6 +117,7 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
 }
 .szczalka {
     padding-bottom: 0;
+    width: 40px;
 }
 }
 
@@ -146,5 +142,6 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
 
     .szczalka {
         padding-bottom: 0;
+    width: 40px;
     }
 }
