@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React from 'react'
 import './mysteries-view.css';
-import SetStartingDay from './set-starting-day.js';
 import HowManyWeekdays from './how-many-weekdays.js';
 import { mysteryList } from './mysteryList';
+import Rose from '../icons/rose.svg'
 
 export default class MysteriesView extends React.Component {
     constructor(props) {
@@ -120,17 +120,18 @@ export default class MysteriesView extends React.Component {
         this.partChoose();
         this.fetchMysteries();
         await this.fetchStartingDay();
-        // console.log(mysteryList)
         this.setState({ todayMystery: this.state.mysteryList[await this.returnMysteryNr()] });
-        await this.shuffleMeditation();
+        this.shuffleMeditation();
     }
-
+    async componentDidUpdate() {
+        await this.fetchStartingDay();
+    }
 
     render() {
         return (
             <div className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''}`}>
                 <p>rozpoczęto dnia: {this.state.startingDay}</p>
-                <SetStartingDay />
+                <img src={Rose} onClick={this.props.showMenu} alt='reset starting day' />
 
                 <h1>Dzisiejsza tajemnica:</h1>
                 <h3>tajemnice {this.state.part.slice(1)}:</h3>
