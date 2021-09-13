@@ -6,7 +6,7 @@
     justify-items: center;
     width: 600px;
     height: fit-content;
-    max-height: 90%;
+    max-height: 80vh;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
@@ -129,7 +129,7 @@
 @media screen and (max-width:765px) {
     .mysteries-view {
         width: 100%;
-        margin: 10% 8%;
+        margin: 2% 8% 10% 8%;
         padding: 30px 6%;
     }
 
