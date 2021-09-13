@@ -12,8 +12,10 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "react": "^17.0.2",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.2",
     "react-favicon": "0.0.23",
+    "react-google-login": "^5.2.2",
     "react-scripts": "4.0.3",
     "react-web-notification": "^0.8.0",
     "web-vitals": "^1.1.2"

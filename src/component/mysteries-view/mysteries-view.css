@@ -127,6 +127,10 @@
 /********************** MOBILE *********************/
 
 @media screen and (max-width:765px) {
+    .mysteries-view-mobile {
+        align-self: start;
+        overflow-y: scroll;
+    }
     .mysteries-view {
         width: 100%;
         margin: 2% 8% 10% 8%;

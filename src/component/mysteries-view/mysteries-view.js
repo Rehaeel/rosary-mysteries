@@ -3,8 +3,7 @@ import React from 'react'
 import './mysteries-view.css';
 import SetStartingDay from './set-starting-day.js';
 import HowManyWeekdays from './how-many-weekdays.js';
-
-const endpoint = process.env.REACT_APP_DB_URL;
+import { mysteryList } from './mysteryList';
 
 export default class MysteriesView extends React.Component {
     constructor(props) {
@@ -19,12 +18,10 @@ export default class MysteriesView extends React.Component {
             startingDay: '****-**-**',
             todayMeditation: "...",
             meditationVisibility: false,
-            mysteryFlex: true,
-            mysteryScroll: false
         };
         this.fetchMysteries = this.fetchMysteries.bind(this);
         this.partChoose = this.partChoose.bind(this);
-        this.returnMystery = this.returnMystery.bind(this);
+        this.returnMysteryNr = this.returnMysteryNr.bind(this);
         this.fetchStartingDay = this.fetchStartingDay.bind(this);
         this.shuffleMeditation = this.shuffleMeditation.bind(this);
         this.toggleMeditationVisibility = this.toggleMeditationVisibility.bind(this);
@@ -43,12 +40,19 @@ export default class MysteriesView extends React.Component {
         }
     };
 
-    async fetchMysteries() {
-        let response = await axios.get(endpoint + this.state.part);
-        return this.setState({ mysteryList: response.data });
+    fetchMysteries() {
+        if (this.state.part === '/radosne') {
+            return this.setState({ mysteryList: mysteryList.slice(0, 5) });
+        } else if (this.state.part === '/chwalebne') {
+            return this.setState({ mysteryList: mysteryList.slice(5, 10) });
+        } else if (this.state.part === '/swiatla') {
+            return this.setState({ mysteryList: mysteryList.slice(10, 15) });
+        } else if (this.state.part === '/bolesne') {
+            return this.setState({ mysteryList: mysteryList.slice(15, 20) });
+        }
     };
 
-    async returnMystery() {
+    async returnMysteryNr() {
         let today = new Date().getDay();
         let countMysteries;
         if (today === 1 || today === 6) {
@@ -113,21 +117,18 @@ export default class MysteriesView extends React.Component {
     }
 
     componentDidMount = async () => {
-        await this.partChoose();
-        await this.fetchMysteries();
+        this.partChoose();
+        this.fetchMysteries();
         await this.fetchStartingDay();
-        this.setState({ todayMystery: this.state.mysteryList[await this.returnMystery()] });
+        // console.log(mysteryList)
+        this.setState({ todayMystery: this.state.mysteryList[await this.returnMysteryNr()] });
         await this.shuffleMeditation();
     }
 
 
     render() {
         return (
-            <div className="mysteries-view"
-                style={{
-                    alignSelf: this.state.mysteryFlex ? 'center' : 'start',
-                    overflowY: this.state.mysteryScroll ? 'scroll' : 'hidden'
-                }}>
+            <div className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''}`}>
                 <p>rozpoczęto dnia: {this.state.startingDay}</p>
                 <SetStartingDay />
 
@@ -145,7 +146,9 @@ export default class MysteriesView extends React.Component {
                     Dzisiejsze rozważanie:
                 </h3>
 
-                <p style={{ display: this.state.meditationVisibility ? 'block' : 'none' }}>{this.state.todayMeditation}</p>
+                <p style={{ display: this.state.meditationVisibility ? 'block' : 'none' }}>
+                    {this.state.todayMeditation}
+                </p>
                 {/* {this.state.mysteryList.map(res =>
                         <h3 key={res.id} className="mystery"> {res.nr + '. ' + res.mystery}</h3>
                     )} */}

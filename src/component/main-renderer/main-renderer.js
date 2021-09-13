@@ -6,6 +6,7 @@ export default class MainRenderer extends React.Component {
     render() {
         return (
             <div className="main-renderer">
+                
                 <MysteriesView />
             </div>
         )
