@@ -12,7 +12,6 @@
     box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
     border-radius: 30px;
     padding: 40px;
-    margin-bottom: 40px;
     color: #000;
 }
 
@@ -118,12 +117,11 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
 
 /********************** MOBILE *********************/
 @media screen and (min-width:765px) and (max-width:980px) {
-    .mysteries-view {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
     .mysteries-view p:first-of-type {
         right: 15px;    
+}
+.szczalka {
+    padding-bottom: 0;
 }
 }
 
@@ -136,8 +134,6 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
         width: 100%;
         margin: 10% 8%;
         padding: 30px 6%;
-        overflow-y: scroll;
-        overflow-x: hidden;
     }
 
     .mysteries-view p:first-of-type {
@@ -146,5 +142,9 @@ box-shadow: 0 0 8px 5px rgba(0,0,0,0.1);
 
     .mysteries-view>h1 {
         margin-bottom: 0;
+    }
+
+    .szczalka {
+        padding-bottom: 0;
     }
 }

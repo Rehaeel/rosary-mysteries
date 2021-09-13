@@ -125,7 +125,7 @@ export default class MysteriesView extends React.Component {
         return (
             <div className="mysteries-view"
                 style={{
-                    overflowY: this.state.mysteryScroll ? 'scroll' : 'hidden',
+                    // overflowY: this.state.mysteryScroll ? 'scroll' : 'hidden',
                     justifySelf: this.state.mysteryFlex ? 'center' : 'start'
                 }}>
                 <p>rozpoczęto dnia: {this.state.startingDay}</p>
