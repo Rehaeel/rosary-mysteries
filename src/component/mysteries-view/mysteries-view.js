@@ -12,10 +12,10 @@ export default class MysteriesView extends React.Component {
             mysteryList: [],
             part: '/swiatla',
             todayMystery: {
-                nr: "numer",
+                nr: "1",
                 mystery: "tajemnica"
             },
-            startingDay: '****-**-**',
+            startingDay: '2021-09-08',
             todayMeditation: "...",
             meditationVisibility: false,
         };
