@@ -4,6 +4,8 @@ import MysteriesView from './component/mysteries-view/mysteries-view';
 import React from 'react';
 import axios from 'axios';
 import Alert from './component/alert/alert';
+import ContactPage from './component/contact-page/contact-page';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 export default class App extends React.Component {
   constructor() {
@@ -12,6 +14,7 @@ export default class App extends React.Component {
       alertVisibility: false,
       menuVisibility: false
     }
+
     this.showAlert = this.showAlert.bind(this);
     this.hideAlert = this.hideAlert.bind(this);
     this.showMenu = this.showMenu.bind(this);
@@ -65,11 +68,21 @@ export default class App extends React.Component {
           isOpen={this.state.menuVisibility}
           onStateChange={(state) => this.handleStateChange(state)}
         >
-          <span onClick={(state) => this.showAlert(state)}>Zacznij od nowa</span>
+          <h4 className="menu-tajemnice"><a href="/">Tajemnice</a></h4>
+          <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>Zacznij od nowa</h4>
+          <h4><a href="/contact">Masz pomysł? Napisz!</a></h4>
+          <h4>Wesprzyj twórcę</h4>
         </Menu>
 
         <div className="App">
-          <MysteriesView showMenu={(state) => this.showMenu(state)} />
+          <Router>
+            <Route exact path="/">
+              <MysteriesView showMenu={(state) => this.showMenu(state)} />
+            </Route>
+            <Route path="/contact">
+              <ContactPage showMenu={(state) => this.showMenu(state)} />
+            </Route>
+          </Router>
         </div>
       </>
     )

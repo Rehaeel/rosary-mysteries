@@ -1,0 +1,43 @@
+.contact-page {
+    position: relative;
+    display: block;
+    padding: 45px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 350px;
+}
+
+.contact-page>h2:first-of-type {
+    margin-block-start: 0;
+    margin-block-end: 30px;
+    text-align: end;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.contact-form>* {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.contact-form>textarea {
+    height: 100px;
+}
+
+.contact-form>*:focus:not(:last-child) {
+    border-radius: 15px;
+    border: none;
+    outline: 1px solid rgba(0,0,0,0.3)
+}
+
+.contact-form>button {
+    background-color: rgba(0, 138, 16, 0.8);
+    color: #fff;
+    font-size: 1em;
+    filter: drop-shadow(0 0 2px #000);
+}

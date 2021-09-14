@@ -60,21 +60,6 @@
     width: 100%;
 }
 
-.mysteries-view>img {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    max-width: 30px;
-    cursor: pointer;
-    transform: scale(1);
-    transition: all .5s ease;
-}
-
-.mysteries-view>img:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 5px 10px #d7004028)
-}
-
 .mysteries-view>button {
     border: 0;
     padding: 15px 30px;

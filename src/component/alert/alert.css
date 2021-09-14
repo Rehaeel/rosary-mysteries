@@ -42,5 +42,5 @@
 }
 
 .alert button:last-of-type {
-    background: #008A10;
+    background: var(--green-color);
 }

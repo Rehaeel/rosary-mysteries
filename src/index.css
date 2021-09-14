@@ -3,6 +3,7 @@
   --padding: 45px;
   --red-color: #D70040;
   --blue-color:  #0048B4;
+  --green-color: #008A10;
 }
 
 body {
@@ -17,4 +18,19 @@ body {
 #root {
   padding: 0;
   margin: 0;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    max-width: 30px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 5px 10px #d7004028)
 }

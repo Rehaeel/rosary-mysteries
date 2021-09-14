@@ -131,7 +131,7 @@ export default class MysteriesView extends React.Component {
         return (
             <div className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''}`}>
                 <p>rozpoczęto dnia: {this.state.startingDay}</p>
-                <img src={Rose} onClick={this.props.showMenu} alt='reset starting day' />
+                <img className="menu-icon" src={Rose} onClick={this.props.showMenu} alt='reset starting day' />
 
                 <h1>Dzisiejsza tajemnica:</h1>
                 <h3>tajemnice {this.state.part.slice(1)}:</h3>
