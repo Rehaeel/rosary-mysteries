@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="500" height="500" version="1.1" viewBox="0 0 500.00001 500.00001" xmlns="http://www.w3.org/2000/svg">
- <circle cx="250" cy="250" r="162.69" fill="none" stroke="#555" stroke-width="14.618"/>
- <path d="m250 250v-127.86" fill="none" stroke="#555" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
- <path d="m250 250-63.597 63.597" fill="none" stroke="#555" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
- <circle cx="250" cy="250" r="15.998" fill="#555"/>
+<svg width="800" height="800" version="1.1" viewBox="0 0 800.00001 800.00001" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 -252.36)" fill="#404040">
+  <path transform="translate(0 252.36)" d="m399.29 132.86a265.71 265.71 0 0 0 -265.72 265.71 265.71 265.71 0 0 0 265.72 265.72 265.71 265.71 0 0 0 265.71 -265.72 265.71 265.71 0 0 0 -265.71 -265.71zm2.37 46.09c12.66 0 22.86 13.08 22.86 29.33v157.81c0 1.24-0.07 2.46-0.18 3.66a37.857 37.857 0 0 1 12.38 17.98l105.57 60.95c12.96 7.48 18.29 22.33 11.96 33.3-6.34 10.96-21.86 13.77-34.81 6.29l-98.62-56.93a37.857 37.857 0 0 1 -20.11 5.8 37.857 37.857 0 0 1 -37.85 -37.85 37.857 37.857 0 0 1 16.02 -30.87c-0.05-0.77-0.08-1.55-0.08-2.33v-157.81c0-16.25 10.2-29.33 22.86-29.33z" color="#000000" color-rendering="auto" fill="#404040" image-rendering="auto" shape-rendering="auto" solid-color="#000000" style="isolation:auto;mix-blend-mode:normal"/>
+ </g>
 </svg>

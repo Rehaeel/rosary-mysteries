@@ -33,7 +33,13 @@ padding-right: 10px;
 }
 
 .menu-restart:before {
-content: '⏲';
+ background: url('./component/icons/time.svg') no-repeat;
+ background-position: center center;
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
 }
 
 .bm-item-list > *:focus-visible {
