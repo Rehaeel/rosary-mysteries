@@ -23,30 +23,34 @@ export default class MysteriesView extends React.Component {
         this.mysteryList = Object(Statics.mysteryList);
     }
 
-    partChoose() {
+    async partChoose() {
         let today = new Date().getDay();
         if (today === 1 || today === 6) {
+            await this.setState({ part: '/radosne' })
         } else if (today === 2 || today === 5) {
+            await this.setState({ part: '/bolesne' })
         } else if (today === 3 || today === 0) {
+            await this.setState({ part: '/chwalebne' })
         } else if (today === 4) {
+            await this.setState({ part: '/swiatla' })
         }
     };
 
-    pullMysteries() {
+    async pullMysteries() {
         if (this.state.part === '/radosne') {
-            this.setState({ mysteryList: this.mysteryList.slice(0, 5) });
+            await this.setState({ mysteryList: this.mysteryList.slice(0, 5) });
         } else if (this.state.part === '/chwalebne') {
-            this.setState({ mysteryList: this.mysteryList.slice(5, 10) });
+            await this.setState({ mysteryList: this.mysteryList.slice(5, 10) });
         } else if (this.state.part === '/swiatla') {
-            this.setState({ mysteryList: this.mysteryList.slice(10, 15) });
+            await this.setState({ mysteryList: this.mysteryList.slice(10, 15) });
         } else if (this.state.part === '/bolesne') {
-            this.setState({ mysteryList: this.mysteryList.slice(15, 20) });
+            await this.setState({ mysteryList: this.mysteryList.slice(15, 20) });
         }
     };
 
     async returnMysteryNr() {
         let today = new Date().getDay();
-        let countMysteries = 1;
+        let countMysteries;
         if (today === 1 || today === 6) {
             countMysteries = await HowManyWeekdays(1) + await HowManyWeekdays(6) - 1;
             if (countMysteries > 5) {
@@ -87,7 +91,7 @@ export default class MysteriesView extends React.Component {
         this.setState({ startingDay: response.data[0].startingDay.slice(0, 10) })
     }
 
-    shuffleMeditation() {
+    async shuffleMeditation() {
         let number = Math.ceil(Math.random() * 3);
         let meditation;
         if (number === 1) {
@@ -97,26 +101,24 @@ export default class MysteriesView extends React.Component {
         } else if (number === 3) {
             meditation = this.state.todayMystery.meditation3;
         }
-        this.setState({ todayMeditation: meditation });
+        await this.setState({ todayMeditation: meditation });
     };
 
     toggleMeditationVisibility() {
-        this.setState({meditationVisibility: !this.state.meditationVisibility});
+        this.setState({ meditationVisibility: !this.state.meditationVisibility });
     }
 
     componentDidMount = async () => {
-        this.partChoose();
+        await this.partChoose();
+        await this.pullMysteries();
         await this.fetchStartingDay();
-        this.setState({ todayMystery: this.state.mysteryList[await this.returnMysteryNr()] });
-        this.pullMysteries();
-        this.shuffleMeditation();
+        await this.setState({ todayMystery: this.state.mysteryList[await this.returnMysteryNr()] });
+        await this.shuffleMeditation();
     }
+
+    async componentDidUpdate() {
         await this.fetchStartingDay();
     }
-    //
-    // async componentDidUpdate() {
-    //     await this.fetchStartingDay();
-    // }
 
     render() {
         return (
@@ -129,7 +131,7 @@ export default class MysteriesView extends React.Component {
                 <h2>{this.state.todayMystery.nr + '. ' + this.state.todayMystery.mystery}</h2>
 
                 <div className="szczalka"
-                    onClick={this.toggleMeditationVisibility}
+                    onClick={() => this.toggleMeditationVisibility()}
                     style={{ transform: this.state.meditationVisibility ? 'rotate(180deg) scale(0.7)' : 'rotate(0deg)  scale(0.7)' }}>
                     V
                 </div>
