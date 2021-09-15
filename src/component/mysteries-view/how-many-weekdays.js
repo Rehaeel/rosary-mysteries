@@ -1,14 +1,10 @@
 import getCountOf from "./get-count-of";
-import axios from 'axios';
 
-const endpoint = process.env.REACT_APP_DB_URL;
-
-export default async function HowManyWeekdays(dayOfWeek) {
+export default function HowManyWeekdays(dayOfWeek, startDay) {
     var date = new Date();
     var today = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
 
-    let theDay = await axios.get(endpoint + '/startingday');
-    let startingDay = theDay.data[0].startingDay.slice(0, 10);
+    let startingDay = startDay;
 
     if (dayOfWeek === 1) {
         let monday = getCountOf(startingDay, today, 1);
