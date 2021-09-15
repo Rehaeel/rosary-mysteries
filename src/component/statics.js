@@ -1,4 +1,5 @@
-export const mysteryList = [
+export default class Statics {
+static mysteryList = [
     {
         part: "radosne",
         nr: "1",
@@ -160,3 +161,5 @@ export const mysteryList = [
         meditation3: "„Nic tak mnie nie jednoczy z Najświętszym Sercem naszego Pana Jezusa Chrystusa jak krzyż, który jest najcenniejszym zadatkiem Jego Miłości”.\r\n\r\nDroga ukończona, miłość dodawała Jezusowi sił, aby zrobić ostatnie kroki aby dotrzeć na szczyt. Wydawałoby się, że to koniec, a to dopiero początek. Bywają w życiu chwile, gdy mówimy , że to koniec, nie mam więcej sił, aby walczyć. Że już nic więcej nie da się zrobić. A Jezus pokazuje, że da się. Daje nam przykład miłości – miłości Ojca która nas prowadzi , która niesie nas na swych ramionach.\r\nGdy myślimy o krzyżu, to budzi w nas  trwogę w sercu, lęk, uciekamy od Niego. Jezus mówi do nas nie bój się, zaufaj, daj się poprowadzić. Spójrz do czego jest zdolna prawdziwa miłość, pokonać wszystkie trudności. Dla miłości nie ma nic nie możliwego.\r\nTylko krzyż może nas w pełni zjednoczyć z Chrystusem. Więc nie lękaj się, On jest gotów Ci pomóc, biorąc swój krzyż z miłości, idzie razem z Tobą twoją drogą. Droga Chrystusa – to droga miłości przez krzyż."
     }
 ]
+
+}

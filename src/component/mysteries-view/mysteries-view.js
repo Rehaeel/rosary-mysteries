@@ -2,8 +2,8 @@ import axios from 'axios';
 import React from 'react'
 import './mysteries-view.css';
 import HowManyWeekdays from './how-many-weekdays.js';
-import { mysteryList } from './mysteryList';
 import Rose from '../icons/rose.svg'
+import Statics from '../statics.js'
 
 export default class MysteriesView extends React.Component {
     constructor(props) {
@@ -19,42 +19,34 @@ export default class MysteriesView extends React.Component {
             todayMeditation: "...",
             meditationVisibility: false,
         };
-        this.fetchMysteries = this.fetchMysteries.bind(this);
-        this.partChoose = this.partChoose.bind(this);
-        this.returnMysteryNr = this.returnMysteryNr.bind(this);
-        this.fetchStartingDay = this.fetchStartingDay.bind(this);
-        this.shuffleMeditation = this.shuffleMeditation.bind(this);
-        this.toggleMeditationVisibility = this.toggleMeditationVisibility.bind(this);
+
+        this.mysteryList = Object(Statics.mysteryList);
     }
 
     partChoose() {
         let today = new Date().getDay();
         if (today === 1 || today === 6) {
-            this.setState({ part: '/radosne' });
         } else if (today === 2 || today === 5) {
-            this.setState({ part: '/bolesne' });
         } else if (today === 3 || today === 0) {
-            this.setState({ part: '/chwalebne' });
         } else if (today === 4) {
-            this.setState({ part: '/swiatla' });
         }
     };
 
-    fetchMysteries() {
+    pullMysteries() {
         if (this.state.part === '/radosne') {
-            return this.setState({ mysteryList: mysteryList.slice(0, 5) });
+            this.setState({ mysteryList: this.mysteryList.slice(0, 5) });
         } else if (this.state.part === '/chwalebne') {
-            return this.setState({ mysteryList: mysteryList.slice(5, 10) });
+            this.setState({ mysteryList: this.mysteryList.slice(5, 10) });
         } else if (this.state.part === '/swiatla') {
-            return this.setState({ mysteryList: mysteryList.slice(10, 15) });
+            this.setState({ mysteryList: this.mysteryList.slice(10, 15) });
         } else if (this.state.part === '/bolesne') {
-            return this.setState({ mysteryList: mysteryList.slice(15, 20) });
+            this.setState({ mysteryList: this.mysteryList.slice(15, 20) });
         }
     };
 
     async returnMysteryNr() {
         let today = new Date().getDay();
-        let countMysteries;
+        let countMysteries = 1;
         if (today === 1 || today === 6) {
             countMysteries = await HowManyWeekdays(1) + await HowManyWeekdays(6) - 1;
             if (countMysteries > 5) {
@@ -95,7 +87,7 @@ export default class MysteriesView extends React.Component {
         this.setState({ startingDay: response.data[0].startingDay.slice(0, 10) })
     }
 
-    async shuffleMeditation() {
+    shuffleMeditation() {
         let number = Math.ceil(Math.random() * 3);
         let meditation;
         if (number === 1) {
@@ -105,27 +97,26 @@ export default class MysteriesView extends React.Component {
         } else if (number === 3) {
             meditation = this.state.todayMystery.meditation3;
         }
-        await this.setState({ todayMeditation: meditation });
+        this.setState({ todayMeditation: meditation });
     };
 
     toggleMeditationVisibility() {
-        this.setState({
-            meditationVisibility: !this.state.meditationVisibility,
-            mysteryFlex: !this.state.mysteryFlex,
-            mysteryScroll: !this.state.mysteryScroll
-        });
+        this.setState({meditationVisibility: !this.state.meditationVisibility});
     }
 
     componentDidMount = async () => {
         this.partChoose();
-        this.fetchMysteries();
         await this.fetchStartingDay();
         this.setState({ todayMystery: this.state.mysteryList[await this.returnMysteryNr()] });
+        this.pullMysteries();
         this.shuffleMeditation();
     }
-    async componentDidUpdate() {
         await this.fetchStartingDay();
     }
+    //
+    // async componentDidUpdate() {
+    //     await this.fetchStartingDay();
+    // }
 
     render() {
         return (
