@@ -9,7 +9,7 @@
     max-height: 80vh;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 4px 50px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 40px;
     color: #000;
@@ -17,7 +17,7 @@
 
 .mysteries-view>h1 {
     width: fit-content;
-    filter: drop-shadow( 4px 4px 8px #0048b41f);
+    filter: drop-shadow(4px 4px 8px #0048b41f);
     width: 110%;
     text-align: center;
     margin-top: 30px;
@@ -25,10 +25,10 @@
 }
 
 .mysteries-view p:first-of-type {
-    position:absolute;
+    position: absolute;
     font-style: italic;
-    top:0;
-    color: rgba(0,0,0,0.35);
+    top: 0;
+    color: rgba(0, 0, 0, 0.35);
 }
 
 .mysteries-view>h3,
@@ -39,8 +39,8 @@
 .mysteries-view>h2:first-of-type {
     width: fit-content;
     border: 1px solid rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0 10px 10px  rgba(0, 72, 180, 0.1);
-    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%) ;
+    box-shadow: 0 0 10px 10px rgba(0, 72, 180, 0.1);
+    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%);
     padding: 10px 20px;
     color: #fff;
     filter: drop-shadow(0 0 2px #000);
@@ -49,7 +49,7 @@
 }
 
 .mysteries-view>h3 {
-    color: rgba(0,0,0,0.65);
+    color: rgba(0, 0, 0, 0.65);
     font-style: italic;
 }
 
@@ -71,11 +71,13 @@
 }
 
 .mysteries-view>button:hover {
-    box-shadow: 3px 3px 8px rgba(0,0,0,0.25);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 }
+
 .mysteries-view>button:active {
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .szczalka {
     position: relative;
     display: flex;
@@ -95,43 +97,32 @@
     cursor: pointer;
 }
 
-
 /********************** MOBILE *********************/
-@media screen and (min-width:765px) and (max-width:980px) {
+@media screen andand (max-width:980px) {
     .mysteries-view p:first-of-type {
-        right: 15px;    
-}
-.szczalka {
-    padding-bottom: 0;
-    width: 40px;
-}
-}
+        right: 15px;
+    }
 
-
+    .szczalka {
+        padding-bottom: 0;
+        width: 40px;
+    }
+}
 
 /********************** MOBILE *********************/
-
 @media screen and (max-width:765px) {
     .mysteries-view-mobile {
         align-self: start;
         overflow-y: scroll;
     }
+
     .mysteries-view {
         width: 100%;
         margin: 2% 8% 10% 8%;
         padding: 30px 6%;
     }
 
-    .mysteries-view p:first-of-type {
-        right: 15px;    
-    }
-
     .mysteries-view>h1 {
         margin-bottom: 0;
-    }
-
-    .szczalka {
-        padding-bottom: 0;
-    width: 40px;
     }
 }
