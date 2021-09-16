@@ -49,8 +49,9 @@
         padding: 5% 5% 0 5%;
         overflow: hidden;
     }
+    
     .contact-form {
-        gap:20px;
+        gap: 20px !important;
     }
     .contact-form>button {
         width: 115%;

@@ -37,7 +37,6 @@ export default class App extends React.Component {
     this.setState({ menuVisibility: state.isOpen })
   }
 
-
   startAgain() {
     let date = new Date();
     let dateYear = date.getFullYear();
@@ -50,6 +49,7 @@ export default class App extends React.Component {
       menuVisibility: false,
       alertVisibility: false
     });
+    // window.location.reload();
   }
 
   render() {

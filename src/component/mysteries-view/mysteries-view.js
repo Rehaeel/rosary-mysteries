@@ -2,7 +2,8 @@ import React from 'react'
 import axios from 'axios';
 import './mysteries-view.css';
 import HowManyWeekdays from './how-many-weekdays.js';
-import Rose from '../icons/rose.svg'
+// import Rose from '../icons/rose.svg'
+import icons from '../icons/icons';
 import Statics from '../statics.js'
 
 export default class MysteriesView extends React.Component {
@@ -161,8 +162,8 @@ export default class MysteriesView extends React.Component {
             <div
                 className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''}`} >
                 <p> rozpoczęto dnia: {this.state.startingDay} </p>
-                <img
-                    className="menu-icon" src={Rose}
+                <icons.Rose
+                    className="menu-icon"
                     onClick={this.props.showMenu}
                     alt='reset starting day' />
                 <h1> Dzisiejsza tajemnica: </h1>
