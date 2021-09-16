@@ -14,7 +14,6 @@ export default class App extends React.Component {
       alertVisibility: false,
       menuVisibility: false
     }
-
     this.showAlert = this.showAlert.bind(this);
     this.hideAlert = this.hideAlert.bind(this);
     this.showMenu = this.showMenu.bind(this);

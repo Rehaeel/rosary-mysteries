@@ -11,8 +11,9 @@
     background-color: #fff;
     box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
-    padding: 40px;
+    padding: 40px 40px 0 40px;
     color: #000;
+    border-bottom: 40px solid #fff;
 }
 
 .mysteries-view>h1 {
@@ -98,7 +99,7 @@
 }
 
 /********************** MOBILE *********************/
-@media screen andand (max-width:980px) {
+@media screen and (max-width:980px) {
     .mysteries-view p:first-of-type {
         right: 15px;
     }
@@ -120,6 +121,8 @@
         width: 100%;
         margin: 2% 8% 10% 8%;
         padding: 30px 6%;
+        border-bottom: 30px solid #fff;
+
     }
 
     .mysteries-view>h1 {

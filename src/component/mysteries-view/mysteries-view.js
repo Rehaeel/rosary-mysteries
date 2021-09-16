@@ -137,8 +137,8 @@ export default class MysteriesView extends React.Component {
         });
     }
 
-    meditationProps(yes, no) {
-        return this.state.meditationVisibility ? yes : no
+    meditationProps(ifTrue, ifFalse) {
+        return this.state.meditationVisibility ? ifTrue : ifFalse
     }
 
     componentDidMount = async () => {
@@ -147,6 +147,8 @@ export default class MysteriesView extends React.Component {
         await this.returnMystery();
         await this.shuffleMeditation();
         await this.fetchStartingDay();
+        await this.returnMystery();
+
     }
 
     // async componentDidUpdate() {
