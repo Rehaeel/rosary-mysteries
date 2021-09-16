@@ -17,7 +17,7 @@ export default class MysteriesView extends React.Component {
                 nr: "1",
                 mystery: "tajemnica"
             },
-            startingDay: '2021-09-08',
+            startingDay: "2021-09-08",
             todayMeditation: "...",
             meditationVisibility: false,
         };
@@ -80,7 +80,7 @@ export default class MysteriesView extends React.Component {
                 return countMysteries;
             }
         } else if (today === 4) {
-            countMysteries = HowManyWeekdays(4) - 1;
+            countMysteries = HowManyWeekdays(4, startingDay) - 1;
             if (countMysteries > 5) {
                 countMysteries = countMysteries % 5;
                 return countMysteries;
