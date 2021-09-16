@@ -49,10 +49,19 @@
         padding: 5% 5% 0 5%;
         overflow: hidden;
     }
-    
+
     .contact-form {
-        gap: 20px !important;
+        gap: 0;
     }
+
+    .contact-form > * {
+    margin-top: 20px;
+}
+
+    .contact-form > *:first-child {
+        margin-top: 0;
+    }
+    
     .contact-form>button {
         width: 115%;
         align-self: center;
