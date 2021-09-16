@@ -67,10 +67,10 @@ export default class App extends React.Component {
           isOpen={this.state.menuVisibility}
           onStateChange={(state) => this.handleStateChange(state)}
         >
-          <h4 className="menu-tajemnice"><a href="/">Tajemnice</a></h4>
+          <h4 className="menu-tajemnice"><a href="/">Dzisiejsza tajemnica</a></h4>
           <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>Zacznij od nowa</h4>
           <h4><a href="/contact">Masz pomysł? Napisz!</a></h4>
-          <h4>Wesprzyj twórcę</h4>
+          <h4>Wesprzyj dzieło</h4>
         </Menu>
 
         <div className="App">
