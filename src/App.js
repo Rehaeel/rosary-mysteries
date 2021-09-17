@@ -195,14 +195,14 @@ export default class App extends React.Component {
           isOpen={this.state.menuVisibility}
           onStateChange={(state) => this.handleStateChange(state)}
         >
-          <h4 className="menu-tajemnice"><a href="/">Dzisiejsza tajemnica</a></h4>
+          <h4 className="menu-tajemnice"><Link to="/">Dzisiejsza tajemnica</Link></h4>
           <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>Zacznij od nowa</h4>
-          <h4><a href="/contact">Masz pomysł? Napisz!</a></h4>
-          <h4><a href="/zrzutka">Wesprzyj dzieło</a></h4>
+          <h4><Link to="/contact">Masz pomysł? Napisz!</Link></h4>
+          <h4><Link to="/zrzutka">Wesprzyj dzieło</Link></h4>
         </Menu>
 
         <div className="App">
-          <Router>
+          <Switch>
             <Route exact path="/">
               <MysteriesView
                 showMenu={(state) => this.showMenu(state)}
@@ -217,7 +217,7 @@ export default class App extends React.Component {
             <Route path="/zrzutka">
               <Zrzutka showMenu={(state) => this.showMenu(state)} />
             </Route>
-          </Router>
+          </Switch>
         </div>
       </>
     )
