@@ -22,14 +22,20 @@ body {
 }
 
 .menu-icon {
+top: 0;
+left: 0;
+padding: 10px;
+border-radius: 15px 50% 50% 50%;
+background-color: #fff;
+border: 1px solid rgba(0, 0, 0, 0.3);
     position: absolute;
-    top: 15px;
-    left: 15px;
     max-height: 30px;
     max-width: 30px;
     cursor: pointer;
     transform: scale(1);
     transition: all .5s ease;
+    z-index: 99;
+    box-shadow: 7px 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-icon:hover {
