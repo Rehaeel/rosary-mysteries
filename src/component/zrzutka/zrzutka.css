@@ -1,7 +1,7 @@
 .zrzutka {
     position: relative;
     height: 367px;
-    overflow: visible;
+    overflow: hidden;
     width: 500px;
     max-width: 80%;
 }
@@ -12,6 +12,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
+    border-radius: 15px 30px 30px 30px;
     z-index: 0;
 }
