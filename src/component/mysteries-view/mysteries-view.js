@@ -60,10 +60,12 @@ export default class MysteriesView extends React.Component {
                     style={{ transform: this.meditationProps('rotate(180deg) scale(0.7)', 'rotate(0deg)  scale(0.7)') }} >
                     V
                 </div>
-
-                <h3 style={{ display: this.meditationProps("block", "none") }} >Dzisiejsze rozważanie:</h3>
-                <p style={{ display: this.meditationProps("block", "none") }} > {this.state.todayMeditation} </p>
-
+                <div
+                    style={{ display: this.meditationProps("block", "none") }}
+                    className="meditation">
+                    <h3>Dzisiejsze rozważanie:</h3>
+                    <p> {this.state.todayMeditation} </p>
+                </div>
 
                 {/* {this.state.mysteryList.map(res =>
                 <h3 key={res.id} className="mystery"> {res.nr + '. ' + res.mystery}</h3>)} */

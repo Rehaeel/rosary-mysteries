@@ -1,7 +1,7 @@
 .alert-overlay {
     position: fixed;
     background: transparent;
-    z-index: 99;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
