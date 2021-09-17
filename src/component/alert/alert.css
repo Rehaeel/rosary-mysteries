@@ -18,7 +18,7 @@
     background-color: #fff;
     z-index: 100;
     padding: var(--padding);
-    border-radius: 15px;
+    border-radius: 30px;
     color: #fff;
     box-shadow: 0 0 15px 20px rgba(0,0,0,0.1);
 }
@@ -30,7 +30,7 @@
 }
 
 .alert button {
-    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
     padding: 15px 0;
     border-radius: 10px;
     color: #fff;
@@ -38,9 +38,11 @@
 }
 
 .alert button:first-of-type {
-    background: var(--red-color);
+    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 60%);
+    filter: drop-shadow(0 0 2px #000);
 }
 
 .alert button:last-of-type {
-    background: var(--green-color);
+    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(0, 138, 16, 0.5) 60%);
+    filter: drop-shadow(0 0 2px #000);
 }
