@@ -4,7 +4,7 @@
     padding: 45px;
     background-color: #fff;
     border-radius: 15px;
-    width: 350px;
+    width: min(350px 80%);
     max-width: 80%;
 }
 
@@ -41,11 +41,11 @@
     font-size: 1em;
     box-shadow: 0 0 10px 10px rgba(0, 72, 180, 0.1);
     background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%);
+    filter: drop-shadow(0 0 2px #000);
 }
 
 @media screen and (max-width: 980px) {
     .contact-page {
-        width: 80%;
         padding: 5% 5% 0 5%;
         overflow: hidden;
     }
@@ -65,5 +65,13 @@
     .contact-form>button {
         width: 115%;
         align-self: center;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .contact-page {
+    width: 100%;
+        margin: 2% 8% 10% 8%;
+        padding: 30px 6% 0 6%;
     }
 }
