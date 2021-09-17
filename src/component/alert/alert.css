@@ -46,3 +46,12 @@
     background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(0, 138, 16, 0.5) 60%);
     filter: drop-shadow(0 0 2px #000);
 }
+
+@media screen and (max-width: 765px) {
+    .alert {
+        width: 75%;
+    padding: 8%;
+    grid-column-gap: 5%;
+    column-gap: 5%;
+    }
+}
