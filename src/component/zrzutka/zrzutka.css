@@ -1,0 +1,26 @@
+.zrzutka {
+    position: relative;
+    height: 367px;
+    overflow: visible;
+    width: 500px;
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+.zrzutka>.menu-icon {
+z-index: 999;
+top: -15px;
+left: -15px;
+padding: 5px;
+border-radius: 50%;
+background-color: #fff;
+}
+
+.zrzutka iframe {
+    position: relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}

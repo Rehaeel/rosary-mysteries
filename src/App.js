@@ -6,6 +6,7 @@ import axios from 'axios';
 import Alert from './component/alert/alert';
 import ContactPage from './component/contact-page/contact-page';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Zrzutka from './component/zrzutka/zrzutka';
 
 export default class App extends React.Component {
   constructor() {
@@ -70,7 +71,7 @@ export default class App extends React.Component {
           <h4 className="menu-tajemnice"><a href="/">Dzisiejsza tajemnica</a></h4>
           <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>Zacznij od nowa</h4>
           <h4><a href="/contact">Masz pomysł? Napisz!</a></h4>
-          <h4>Wesprzyj dzieło</h4>
+          <h4><a href="/zrzutka">Wesprzyj dzieło</a></h4>
         </Menu>
 
         <div className="App">
@@ -80,6 +81,9 @@ export default class App extends React.Component {
             </Route>
             <Route path="/contact">
               <ContactPage showMenu={(state) => this.showMenu(state)} />
+            </Route>
+            <Route path="/zrzutka">
+              <Zrzutka showMenu={(state) => this.showMenu(state)} />
             </Route>
           </Router>
         </div>

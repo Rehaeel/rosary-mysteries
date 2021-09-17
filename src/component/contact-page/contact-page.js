@@ -2,6 +2,7 @@ import React from 'react'
 import './contact-page.css';
 import Rose from '../icons/rose.svg'
 import emailjs from 'emailjs-com';
+import icons from '../icons/icons';
 
 export default class ContactPage extends React.Component {
     constructor() {
@@ -27,7 +28,7 @@ export default class ContactPage extends React.Component {
     render() {
         return (
             <div className="contact-page">
-                <img className="menu-icon" src={Rose} alt="menu" onClick={this.props.showMenu} />
+                <icons.Rose className="menu-icon" src={Rose} alt="menu" onClick={this.props.showMenu} />
                 <h2 style={{ display: this.state.formVisibility ? 'block' : 'none' }}>Napisz swoją uwagę:</h2>
                 <form
                     className="contact-form"
