@@ -27,6 +27,7 @@ export default class App extends React.Component {
     }
     this.mysteryList = Object(Statics.mysteryList);
 
+    this.updateVH = this.updateVH.bind(this);
     this.showAlert = this.showAlert.bind(this);
     this.hideAlert = this.hideAlert.bind(this);
     this.showMenu = this.showMenu.bind(this);
@@ -37,6 +38,13 @@ export default class App extends React.Component {
     this.returnMystery = this.returnMystery.bind(this);
     this.partChoose = this.partChoose.bind(this);
     this.pullMysteries = this.pullMysteries.bind(this);
+  }
+
+  updateVH() {
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
   }
 
   showAlert(state) {
@@ -166,6 +174,7 @@ export default class App extends React.Component {
   };
 
   componentDidMount = async () => {
+    this.updateVH();
     await this.partChoose();
     await this.pullMysteries();
     await this.returnMystery();
