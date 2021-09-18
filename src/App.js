@@ -195,18 +195,26 @@ export default class App extends React.Component {
           isOpen={this.state.menuVisibility}
           onStateChange={(state) => this.handleStateChange(state)}
         >
-          <h4 className="menu-tajemnice">
-            <NavLink to="/" onClick={(state) => this.showMenu(state)}>Dzisiejsza tajemnica</NavLink>
-          </h4>
-          <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>
+          <NavLink className="menu-tajemnice" to="/" onClick={(state) => this.showMenu(state)}>
+            <h4>
+              Dzisiejsza tajemnica
+            </h4>
+          </NavLink>
+          <h4 onClick={(state) => this.showAlert(state)}>
             Zacznij od nowa
           </h4>
-          <h4>
-            <NavLink to="/contact" onClick={(state) => this.showMenu(state)}>Masz pomysł? Napisz!</NavLink>
-          </h4>
-          <h4>
-            <NavLink to="/zrzutka" onClick={(state) => this.showMenu(state)}>Wesprzyj dzieło</NavLink>
-          </h4>
+
+          <NavLink to="/contact" onClick={(state) => this.showMenu(state)}>
+            <h4>
+              Masz pomysł? Napisz!
+            </h4>
+          </NavLink>
+
+          <NavLink to="/zrzutka" onClick={(state) => this.showMenu(state)}>
+            <h4>
+              Wesprzyj dzieło
+            </h4>
+          </NavLink>
         </Menu>
 
         <div className="App">
