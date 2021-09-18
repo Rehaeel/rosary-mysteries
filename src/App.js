@@ -5,7 +5,7 @@ import MysteriesView from './component/mysteries-view/mysteries-view';
 import axios from 'axios';
 import Alert from './component/alert/alert';
 import ContactPage from './component/contact-page/contact-page';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route, NavLink } from "react-router-dom";
 import Zrzutka from './component/zrzutka/zrzutka';
 import HowManyWeekdays from './component/mysteries-view/how-many-weekdays';
 import Statics from './component/statics.js'
@@ -195,29 +195,35 @@ export default class App extends React.Component {
           isOpen={this.state.menuVisibility}
           onStateChange={(state) => this.handleStateChange(state)}
         >
-          <h4 className="menu-tajemnice"><Link to="/">Dzisiejsza tajemnica</Link></h4>
-          <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>Zacznij od nowa</h4>
-          <h4><Link to="/contact">Masz pomysł? Napisz!</Link></h4>
-          <h4><Link to="/zrzutka">Wesprzyj dzieło</Link></h4>
+          <h4 className="menu-tajemnice">
+            <NavLink to="/" onClick={(state) => this.showMenu(state)}>Dzisiejsza tajemnica</NavLink>
+          </h4>
+          <h4 className="menu-restart" onClick={(state) => this.showAlert(state)}>
+            Zacznij od nowa
+          </h4>
+          <h4>
+            <NavLink to="/contact" onClick={(state) => this.showMenu(state)}>Masz pomysł? Napisz!</NavLink>
+          </h4>
+          <h4>
+            <NavLink to="/zrzutka" onClick={(state) => this.showMenu(state)}>Wesprzyj dzieło</NavLink>
+          </h4>
         </Menu>
 
         <div className="App">
-          <Switch>
-            <Route exact path="/">
-              <MysteriesView
-                showMenu={(state) => this.showMenu(state)}
-                startingDay={this.state.startingDay}
-                part={this.state.part}
-                todayMystery={this.state.todayMystery}
-              />
-            </Route>
-            <Route path="/contact">
-              <ContactPage showMenu={(state) => this.showMenu(state)} />
-            </Route>
-            <Route path="/zrzutka">
-              <Zrzutka showMenu={(state) => this.showMenu(state)} />
-            </Route>
-          </Switch>
+          <Route exact path="/">
+            <MysteriesView
+              showMenu={(state) => this.showMenu(state)}
+              startingDay={this.state.startingDay}
+              part={this.state.part}
+              todayMystery={this.state.todayMystery}
+            />
+          </Route>
+          <Route path="/contact">
+            <ContactPage showMenu={(state) => this.showMenu(state)} />
+          </Route>
+          <Route path="/zrzutka">
+            <Zrzutka showMenu={(state) => this.showMenu(state)} />
+          </Route>
         </div>
       </>
     )
