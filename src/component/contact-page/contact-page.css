@@ -43,6 +43,7 @@
     background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%);
     filter: drop-shadow(0 0 2px #000);
     border-radius: 15px;
+    margin-top: 30px;
     width: 200px;
     align-self: end;
 }
@@ -59,32 +60,23 @@
 }
 
 @media screen and (max-width: 980px) {
-    .contact-page {
-        padding: 5% 5% 0 5%;
-        overflow: hidden;
-    }
-
     .contact-form {
         gap: 0;
     }
 
     .contact-form > * {
     margin-top: 20px;
-}
+    }
 
     .contact-form > *:first-child {
         margin-top: 0;
     }
-    
-    .contact-form>button {
-        width: 117%;
-        align-self: center;
-    }
+
 }
 
 @media screen and (max-width: 765px) {
     .contact-page {
         margin: 2% 8%;
-        padding: 30px 6% 0 6%;
+        padding: 30px 6%;
     }
 }

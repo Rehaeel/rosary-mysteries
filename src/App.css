@@ -10,8 +10,22 @@
     background-attachment: fixed;
 }
 
+.App>div:first-of-type::after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    right: 10%;
+    width: 80%;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(10px);
+
+}
+
 .bm-menu-wrap {
- background-color:#fff;
+    background-color:#fff;
 }
 
 #react-burger-menu-btn {
@@ -28,7 +42,7 @@
 }
 
 .bm-item-list > *:focus-visible {
-outline: 0;
+    outline: 0;
 }
 
 .bm-item-list > * {

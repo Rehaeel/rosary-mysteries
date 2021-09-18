@@ -8,7 +8,7 @@
     height: fit-content;
     max-height: 80vh;
     background-color: #fff;
-    box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);    there is used background in app under rendered components*/
     border-radius: 15px 30px 30px 30px;
     padding: 0 40px 0 40px;
     color: #000;
