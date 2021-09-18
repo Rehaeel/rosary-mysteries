@@ -10,10 +10,6 @@
     background-attachment: fixed;
 }
 
-.App>div:first-of-type {
-    margin-top: -120px;
-}
-
 .bm-menu-wrap {
     background-color:#fff;
 }
@@ -66,7 +62,7 @@
     content: '>';
     position: absolute;
     right: 0px;
-    top: -5px;
+    top: 13px;
     opacity: 0;
     font-size: 1.4em;
     transition: all .5s ease;
@@ -84,38 +80,3 @@
     opacity: 1;
     transition: all .5s ease-out;
 }
-
-.App>div:first-of-type:after {
-    content: '';
-    position: absolute;
-    bottom: -120px;
-    right: 10%;
-    width: 80%;
-    opacity: 1;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-    filter: blur(10px);
-}
-
-/* 
-.content-shadow:first-of-type {
-    position: relative;
-    width: fit-content;
-    height: fit-content;
-}
-
-.content-shadow:after {
-    content: '';
-    position: absolute;
-    bottom: -120px;
-    right: 10%;
-    width: 80%;
-    opacity: 1;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-    filter: blur(10px);
-} */

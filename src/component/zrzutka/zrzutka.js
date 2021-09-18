@@ -20,8 +20,8 @@ export default class Zrzutka extends React.Component {
                 <iframe
                     title="wsparcie dzieła"
                     src="https://zrzutka.pl/y6nh7c/widget/13"
-                    frameBorder="0" scrolling="no">
-                </iframe>
+                    frameBorder="0" scrolling="no" >
+                </iframe >
             </div>
         )
     }
