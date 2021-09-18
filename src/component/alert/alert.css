@@ -51,7 +51,7 @@
     .alert {
         width: 75%;
     padding: 8%;
-    grid-column-gap: 5%;
+    gap: 25px;
     column-gap: 5%;
     }
 }
