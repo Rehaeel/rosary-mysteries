@@ -3,9 +3,19 @@ import './zrzutka.css';
 import icons from '../icons/icons';
 
 export default class Zrzutka extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            componentVisibility: 'hidden'
+        }
+    }
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200)
+    }
     render() {
         return (
-            <div className="zrzutka">
+            <div className={`zrzutka ${this.state.componentVisibility}`}>
                 <icons.Rose className="menu-icon" alt="menu" onClick={this.props.showMenu} />
                 <iframe
                     title="wsparcie dzieła"

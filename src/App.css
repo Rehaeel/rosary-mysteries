@@ -10,18 +10,8 @@
     background-attachment: fixed;
 }
 
-.App>div:first-of-type::after {
-    content: '';
-    position: absolute;
-    bottom: -120px;
-    right: 10%;
-    width: 80%;
-    height: 50px;
-    background: rgba(0,0,0,0.5);
-    border-radius: 50%;
-    z-index: -1;
-    filter: blur(10px);
-
+.App>div:first-of-type {
+    margin-top: -120px;
 }
 
 .bm-menu-wrap {
@@ -84,4 +74,33 @@
 .bm-item-list > *:hover:after {
     right: -30px;
     opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: all .5s ease-out;
+}
+
+.App>div:first-of-type {
+    position: relative;
+    width: max-content;
+    height: max-content;
+}
+
+.App>div:first-of-type:after {
+    content: '';
+    position: absolute;
+    bottom: -120px;
+    right: 10%;
+    width: 80%;
+    opacity: 1;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    filter: blur(10px);
 }

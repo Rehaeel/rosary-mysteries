@@ -8,7 +8,8 @@ export default class MysteriesView extends React.Component {
         super(props);
         this.state = {
             todayMeditation: "...",
-            meditationVisibility: false
+            meditationVisibility: false,
+            componentVisibility: "hidden"
         };
     }
 
@@ -40,12 +41,13 @@ export default class MysteriesView extends React.Component {
 
     componentDidMount = async () => {
         await this.shuffleMeditation();
+        setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
     }
 
     render() {
         return (
             <div
-                className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''}`} >
+                className={`mysteries-view ${this.state.meditationVisibility ? 'mysteries-view-mobile' : ''} ${this.state.componentVisibility}`} >
                 <p> rozpoczęto dnia: {this.props.startingDay} </p>
                 <icons.Rose
                     className="menu-icon"

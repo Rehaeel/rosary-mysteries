@@ -8,7 +8,9 @@ export default class ContactPage extends React.Component {
     constructor() {
         super();
         this.state = {
-            formVisibility: true
+            formVisibility: true,
+            componentVisibility: 'hidden',
+            shadowVisibility: 'shadow-hidden'
         }
         this.sendEmail = this.sendEmail.bind(this);
     }
@@ -25,9 +27,14 @@ export default class ContactPage extends React.Component {
         this.setState({ formVisibility: !this.state.formVisibility })
     }
 
+    componentDidMount() {
+        setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
+        setTimeout(() => this.setState({ shadowVisibility: 'visible' }), 700);
+    }
+
     render() {
         return (
-            <div className="contact-page">
+            <div className={`contact-page ${this.state.componentVisibility}`}>
                 <icons.Rose className="menu-icon" src={Rose} alt="menu" onClick={this.props.showMenu} />
                 <h2 style={{ display: this.state.formVisibility ? 'block' : 'none' }}>Napisz swoją uwagę:</h2>
                 <form

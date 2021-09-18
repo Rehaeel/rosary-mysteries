@@ -218,20 +218,22 @@ export default class App extends React.Component {
         </Menu>
 
         <div className="App">
-          <Route exact path="/">
-            <MysteriesView
-              showMenu={(state) => this.showMenu(state)}
-              startingDay={this.state.startingDay}
-              part={this.state.part}
-              todayMystery={this.state.todayMystery}
-            />
-          </Route>
-          <Route path="/contact">
-            <ContactPage showMenu={(state) => this.showMenu(state)} />
-          </Route>
-          <Route path="/zrzutka">
-            <Zrzutka showMenu={(state) => this.showMenu(state)} />
-          </Route>
+          <div>
+            <Route exact path="/">
+              <MysteriesView
+                showMenu={(state) => this.showMenu(state)}
+                startingDay={this.state.startingDay}
+                part={this.state.part}
+                todayMystery={this.state.todayMystery}
+              />
+            </Route>
+            <Route path="/contact">
+              <ContactPage showMenu={(state) => this.showMenu(state)} />
+            </Route>
+            <Route path="/zrzutka">
+              <Zrzutka showMenu={(state) => this.showMenu(state)} />
+            </Route>
+          </div>
         </div>
       </>
     )
