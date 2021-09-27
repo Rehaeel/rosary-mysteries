@@ -6,7 +6,7 @@
     justify-items: center;
     width: 600px;
     height: fit-content;
-    max-height: 80vh;
+    max-height: 90vh;
     background-color: #fff;
     /* box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);    there is used background in app under rendered components*/
     border-radius: 15px 30px 30px 30px;
@@ -124,13 +124,12 @@
 /********************** MOBILE *********************/
 @media screen and (max-width:765px) {
     .mysteries-view-mobile {
-        align-self: start;
         overflow-y: scroll;
     }
 
     .mysteries-view {
-        width: 80vw;
-        margin: 2% 8%;
+        width: 95vw;
+        margin: 2% 7%;
         padding: 0 6%;
         border-bottom: 30px solid #fff;
     }

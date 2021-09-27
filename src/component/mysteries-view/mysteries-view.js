@@ -29,14 +29,14 @@ export default class MysteriesView extends React.Component {
     };
 
     toggleMeditationVisibility() {
-        this.shuffleMeditation();
         this.setState({
             meditationVisibility: !this.state.meditationVisibility
         });
+        this.shuffleMeditation();
     }
 
     meditationProps(ifTrue, ifFalse) {
-        return this.state.meditationVisibility ? ifTrue : ifFalse
+        return this.state.meditationVisibility ? ifTrue : ifFalse;
     }
 
     componentDidMount = async () => {
@@ -63,7 +63,7 @@ export default class MysteriesView extends React.Component {
                     V
                 </div>
                 <div
-                    style={{ display: this.meditationProps("block", "none") }}
+                    style={{ maxHeight: this.meditationProps(1000, 0), transition: 'all .5s ease' }}
                     className="meditation">
                     <h3>Dzisiejsze rozważanie:</h3>
                     <p> {this.state.todayMeditation} </p>
