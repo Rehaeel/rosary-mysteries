@@ -13,7 +13,7 @@ export default class MysteriesView extends React.Component {
         };
     }
 
-    async shuffleMeditation() {
+    shuffleMeditation() {
         let number = Math.ceil(Math.random() * 3);
         let meditation;
         if (number === 1) {
@@ -23,7 +23,7 @@ export default class MysteriesView extends React.Component {
         } else if (number === 3) {
             meditation = this.props.todayMystery.meditation3;
         }
-        await this.setState({
+        this.setState({
             todayMeditation: meditation
         });
     };
@@ -40,7 +40,7 @@ export default class MysteriesView extends React.Component {
     }
 
     componentDidMount = async () => {
-        await this.shuffleMeditation();
+        this.shuffleMeditation();
         setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
     }
 

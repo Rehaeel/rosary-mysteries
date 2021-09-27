@@ -75,7 +75,7 @@ export default class App extends React.Component {
       alertVisibility: false
     });
     await this.fetchStartingDay();
-    await this.returnMystery();
+    this.returnMystery();
   }
 
   async fetchStartingDay() {
@@ -90,7 +90,7 @@ export default class App extends React.Component {
     const today = new Date().getDay();
     let countMysteries;
     if (today === 1 || today === 6) {
-      countMysteries = HowManyWeekdays(1, startingDay) + HowManyWeekdays(6, startingDay) - 1;
+      countMysteries = HowManyWeekdays(1, startingDay) + HowManyWeekdays(6, startingDay);
       if (countMysteries > 5) {
         countMysteries = countMysteries % 5;
         return countMysteries;
@@ -98,7 +98,7 @@ export default class App extends React.Component {
         return countMysteries;
       }
     } else if (today === 2 || today === 5) {
-      countMysteries = HowManyWeekdays(2, startingDay) + HowManyWeekdays(5, startingDay) - 1;
+      countMysteries = HowManyWeekdays(2, startingDay) + HowManyWeekdays(5, startingDay);
       if (countMysteries > 5) {
         countMysteries = countMysteries % 5;
         return countMysteries;
@@ -106,7 +106,7 @@ export default class App extends React.Component {
         return countMysteries;
       }
     } else if (today === 3 || today === 0) {
-      countMysteries = HowManyWeekdays(3, startingDay) + HowManyWeekdays(0, startingDay) - 1;
+      countMysteries = HowManyWeekdays(3, startingDay) + HowManyWeekdays(0, startingDay);
       if (countMysteries > 5) {
         countMysteries = countMysteries % 5;
         return countMysteries;
@@ -114,7 +114,7 @@ export default class App extends React.Component {
         return countMysteries;
       }
     } else if (today === 4) {
-      countMysteries = HowManyWeekdays(4, startingDay) - 1;
+      countMysteries = HowManyWeekdays(4, startingDay);
       if (countMysteries > 5) {
         countMysteries = countMysteries % 5;
         return countMysteries;
@@ -124,9 +124,9 @@ export default class App extends React.Component {
     }
   }
 
-  async returnMystery() {
-    await this.setState({
-      todayMystery: this.state.mysteryList[this.returnMysteryNr()]
+  returnMystery() {
+    this.setState({
+      todayMystery: this.state.mysteryList[this.returnMysteryNr() - 1]
     });
   }
 
@@ -137,35 +137,35 @@ export default class App extends React.Component {
         part: '/radosne'
       })
     } else if (today === 2 || today === 5) {
-      await this.setState({
+      this.setState({
         part: '/bolesne'
       })
     } else if (today === 3 || today === 0) {
-      await this.setState({
+      this.setState({
         part: '/chwalebne'
       })
     } else if (today === 4) {
-      await this.setState({
+      this.setState({
         part: '/swiatla'
       })
     }
   };
 
-  async pullMysteries() {
+  pullMysteries() {
     if (this.state.part === '/radosne') {
-      await this.setState({
+      this.setState({
         mysteryList: this.mysteryList.slice(0, 5)
       });
     } else if (this.state.part === '/chwalebne') {
-      await this.setState({
+      this.setState({
         mysteryList: this.mysteryList.slice(5, 10)
       });
     } else if (this.state.part === '/swiatla') {
-      await this.setState({
+      this.setState({
         mysteryList: this.mysteryList.slice(10, 15)
       });
     } else if (this.state.part === '/bolesne') {
-      await this.setState({
+      this.setState({
         mysteryList: this.mysteryList.slice(15, 20)
       });
     }
@@ -174,8 +174,8 @@ export default class App extends React.Component {
   componentDidMount = async () => {
     this.updateVH();
     await this.partChoose();
-    await this.pullMysteries();
-    await this.returnMystery();
+    this.pullMysteries();
+    this.returnMystery();
     await this.fetchStartingDay();
     await this.returnMystery();
   }
