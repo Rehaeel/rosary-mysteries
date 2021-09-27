@@ -3,6 +3,8 @@ import './contact-page.css';
 import Rose from '../icons/rose.svg'
 import emailjs from 'emailjs-com';
 import icons from '../icons/icons';
+import ReactGA from 'react-ga';
+
 
 export default class ContactPage extends React.Component {
     constructor() {
@@ -29,7 +31,7 @@ export default class ContactPage extends React.Component {
 
     componentDidMount() {
         setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
-        setTimeout(() => this.setState({ shadowVisibility: 'visible' }), 700);
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
     render() {

@@ -2,6 +2,7 @@ import React from 'react'
 import './mysteries-view.css';
 // import Rose from '../icons/rose.svg'
 import icons from '../icons/icons';
+import ReactGA from 'react-ga';
 
 export default class MysteriesView extends React.Component {
     constructor(props) {
@@ -42,6 +43,7 @@ export default class MysteriesView extends React.Component {
     componentDidMount = async () => {
         this.shuffleMeditation();
         setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }
 
     render() {

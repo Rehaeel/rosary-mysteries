@@ -1,6 +1,7 @@
 import React from 'react'
 import './zrzutka.css';
 import icons from '../icons/icons';
+import ReactGA from 'react-ga';
 
 export default class Zrzutka extends React.Component {
     constructor() {
@@ -11,7 +12,8 @@ export default class Zrzutka extends React.Component {
     }
 
     componentDidMount() {
-        setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200)
+        setTimeout(() => this.setState({ componentVisibility: 'visible' }), 200);
+        ReactGA.pageview(window.location.pathname + window.location.search);
     }
     render() {
         return (

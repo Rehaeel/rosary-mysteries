@@ -10,7 +10,6 @@ import Zrzutka from './component/zrzutka/zrzutka';
 import HowManyWeekdays from './component/mysteries-view/how-many-weekdays';
 import Statics from './component/statics.js'
 
-
 export default class App extends React.Component {
   constructor() {
     super();
