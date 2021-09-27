@@ -9,6 +9,7 @@ import { Route, NavLink } from "react-router-dom";
 import Zrzutka from './component/zrzutka/zrzutka';
 import HowManyWeekdays from './component/mysteries-view/how-many-weekdays';
 import Statics from './component/statics.js'
+import ReactGA from 'react-ga';
 
 export default class App extends React.Component {
   constructor() {
@@ -171,12 +172,14 @@ export default class App extends React.Component {
   };
 
   componentDidMount = async () => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.updateVH();
     await this.partChoose();
     this.pullMysteries();
     this.returnMystery();
     await this.fetchStartingDay();
     await this.returnMystery();
+
   }
 
   render() {
