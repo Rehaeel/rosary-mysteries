@@ -202,11 +202,11 @@ export default class App extends React.Component {
               Dzisiejsza tajemnica
             </h4>
           </NavLink>
-          <NavLink to="">
+          {/* <NavLink to="">
             <h4 onClick={(state) => this.showAlert(state)}>
               Zacznij od nowa
             </h4>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/contact" onClick={(state) => this.showMenu(state)}>
             <h4>
               Masz pomysł? Napisz!

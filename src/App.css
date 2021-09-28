@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
     color: #333;
@@ -70,6 +71,13 @@
 .bm-item-list > *:hover:after {
     right: -30px;
     opacity: 1;
+}
+
+.bm-item:last-of-type {
+    position:absolute;
+    bottom: 10px;
+    font-size: 90%;
+    color: hsl(0, 0%, 50%);
 }
 
 .hidden {
