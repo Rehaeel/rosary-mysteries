@@ -20,7 +20,7 @@ export default class ContactPage extends React.Component {
     sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('service_6f2wh6e', 'rozaniec-app', e.target, 'user_FYozYYCsMf5VcHRsN4W14')
+        emailjs.sendForm('service_6f2wh6e', '10nastart.pl', e.target, 'user_FYozYYCsMf5VcHRsN4W14')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
