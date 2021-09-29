@@ -207,7 +207,7 @@ export default class App extends React.Component {
               Zacznij od nowa
             </h4>
           </NavLink> */}
-          <NavLink to="/contact" onClick={(state) => this.showMenu(state)}>
+          <NavLink to="/kontakt" onClick={(state) => this.showMenu(state)}>
             <h4>
               Masz pomysł? Napisz!
             </h4>
@@ -230,7 +230,7 @@ export default class App extends React.Component {
               todayMystery={this.state.todayMystery}
             />
           </Route>
-          <Route path="/contact">
+          <Route path="/kontakt">
             <ContactPage showMenu={(state) => this.showMenu(state)} />
           </Route>
           <Route path="/zrzutka">
