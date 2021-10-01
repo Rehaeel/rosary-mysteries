@@ -81,7 +81,7 @@ static mysteryList = [
         meditation3: "Pan Bóg nie powtarza się w świętych swoich. Stać Go na nieskończoną rozmaitość swoich sług. Życie na ziemi jest tylko zapoczątkowaniem pełnej aktywności duchowej jaka się okaże w niebie. Najświętsza Maryja Panna wywyższona ponad wszystkie stworzenia i najbliższa tronu Bożego, dopomaga nam do osiągnięcia w niebie w pełni naszego osobistego powołania."
     },
     {
-        part: "swiatla",
+        part: "światła",
         nr: "1",
         mystery: "Chrzest Pana Jezusa w Jordanie",
         meditation1: "„A gdy Jezus został ochrzczony, natychmiast wyszedł z wody. A oto otworzyły Mu się niebiosa”. (Mt 3, 16) Dlaczego otworzyły się niebiosa? – pyta św. Jan Chryzostom i odpowiada - Abyś poznał, że dzieje się to także wtedy, kiedy ty przyjmujesz chrzest. Bóg wzywa cię do ojczyzny niebieskiej, pokazuje, że nic wspólnego nie masz z ziemią. Jeśli nawet tego nie widzisz, uwierz w to. Także gołębica dlatego wtedy się ukazała, aby – jakby palcem – wskazać wszystkim obecnym Syna Bożego. Ale nie tylko dlatego, ale także abyś poznał, na ciebie zstępuje Duch, kiedy przyjmujesz chrzest”\r\n\r\n \r\n\r\nProsimy Cię Panie o wierność. Daj nam światłe oczy serca, aby wśród nas widzialne były Twoje otwarte niebiosa. Prosimy Cię o wierność łasce chrztu, aby to wszystko co przesłania nam Twoje otwarte niebiosa zostało oświetlone łaska Twego Ducha. Niech wierność w oddaniu się Tobie pomaga dostrzegać w naszych bliźnich Twoich umiłowanych synów i córki.",
@@ -89,7 +89,7 @@ static mysteryList = [
         meditation3: "„O mój Jezu”\r\n\r\n\r\nNad Jordanem dał się słyszeć głos: „ To jest mój Syn Umiłowany.” Objawienie Syna Bożego, naszego Pana Jezusa Chrystusa. Jest to dla nas moment, żeby się zatrzymać, zreflektować. Kto jest moim Panem? Niech jest to nasza szczera odpowiedź. Kto tak naprawdę jest moim Panem, od którego zależą moje codzienne wybory, decyzje?\r\n„O mój Jezu„ bądź moim jedynym Panem."
     },
     {
-        part: "swiatla",
+        part: "światła",
         nr: "2",
         mystery: "Wesele w Kanie",
         meditation1: "„Podziwiajmy cud, który uczynił Jezus ze względu na nasze odnowienie. Nie bez powodu przyszedł na wesele – pisze św. Augustyn - Nawet bez cudu w tym wydarzeniu coś z tajemnicy staje przed nami otworem. Pukajmy, aby nam otworzono i abyśmy zostali upojeni niewidzialnym winem: byliśmy wodą, a On uczynił nas winem, dał nam wiedzę, znamy bowiem wiarę w Tego, którego wcześniej nie znaliśmy.”\r\n\r\n \r\n\r\nProsimy Cię Panie o posłuszeństwo. Spojrzyj łaskawie na nasze stągwie życia i przemień je. Naucz przyjmować z uległością zaproszenie Maryi: „Zróbcie wszystko cokolwiek wam powie”, abyśmy nie uronili ani jednego Bożego Słowa, abyśmy nie zlekceważyli Bożej Woli wobec nas. Prosimy Cię Panie o posłuszne serca, bo tylko wtedy zdarzy się cud i dostąpimy łaski oglądania Ciebie pośród nas.",
@@ -97,7 +97,7 @@ static mysteryList = [
         meditation3: "„Przebacz nam nasze grzechy”\r\n\r\n\r\nJezu stajemy przed Tobą tacy, jacy jesteśmy. Jak często brak nam wiary, że przy Tobie niczego nam nie braknie. Woda, którą mieliśmy zaczerpnąć na Twoje słowa, zostanie przemieniona w wino. Czy wierzę, że moje codzienne, drobne czyny mają wartość, a ich wartością jest miłość. Czy jednak zaczerpnę tej wody i pozwolę, abyś Ty ją przemienił?"
     },
     {
-        part: "swiatla",
+        part: "światła",
         nr: "3",
         mystery: "Głoszenie Ewangelii",
         meditation1: "„To mamy wiedzieć o królestwie Bożym – zachęcają Ojcowie Kościoła - że nic nie ma wspólnego sprawiedliwość z niesprawiedliwością ani światło z ciemnością, ani królestwo Boże nie może współistnieć z królestwem grzechu. Jeżeli więc chcemy, aby Bóg w nas panował, w żaden sposób „nie może królować grzech w naszym śmiertelnym ciele”, lecz mamy zadawać śmierć temu, co w nas jest ziemskie, a przynosić owoce Ducha. I mamy być dla Boga tym duchowym rajem, który On nawiedza i w którym On tylko panuje wraz z Chrystusem. Niech będzie w nas Pan, aż rzuci pod swoje stopy wszystkich swoich nieprzyjaciół, którzy w nas są, i pokona w nas wszelką zwierzchność, władzę i moc.”\r\n\r\n \r\n\r\nProsimy Cię Panie o pokorę. Pomnóż wśród nas tęsknotę za Twoim Królestwem. Pomóż zobaczyć, że to, za czym tęsknimy jest na wyciągnięcie reki – jest tu i teraz. Prosimy Cię o pokorę, abyśmy potrafiły zostawić to, co się Tobie w naszym życiu nie podoba. Jezu, cichy i serca pokornego, oczyść nasze serca, aby nasz dom był Twoim duchowym rajem, gdzie Ty z upodobaniem mieszkasz. Uczyń nas pokornymi głosicielami Twojej Obecności i Królestwa, które jest pośród nas.",
@@ -105,7 +105,7 @@ static mysteryList = [
         meditation3: "„Zachowaj nas od ognia piekielnego”\r\n\r\n\r\nJezu Ty nas każdego dnia nauczasz. Pragniesz naszego szczęścia. Nie chwilowej przyjemności, ale głębokiej radości, pokoju i wolności.\r\nNawrócić się. Zmienić myślenie. Czy pozwolę, abyś wszedł do mojego życia? Czy zgodzę się na to, że Ty wiesz lepiej? Nawet wtedy jeśli nie będzie to dla mnie proste. Czy jestem świadoma, że od mojej dzisiejszej decyzji będzie zależała moja przyszłość?"
     },
     {
-        part: "swiatla",
+        part: "światła",
         nr: "4",
         mystery: "Przemienienie na Górze Tabor",
         meditation1: "„Rozważ to wszystko i prowadź życie godne miłości – mówi św. Jan Chryzostom - Dlatego Pan najpierw przyszedł tutaj, abyś jeszcze przed przybyciem tam [do królestwa niebieskiego] poznał, że jesteś w stanie żyć na ziemi tak, jakbyś żył w niebie. Każdego dnia szukajmy Królestwa Niebieskiego, a wszystko co ziemskie uważajmy za cień i sen. Gdyby jakiś król wziął cię, będącego żebrakiem i potrzebującym, uczynił cię nagle swoim synem, nawet nie myślałbyś o swojej chacie i jej marności. Nigdy nie ceń tego, co ulotne, ponieważ do większych rzeczy zostałeś wezwany! Ten, który cię powołuje, jest Panem aniołów, a dawane ci dobra przekraczają rozum i wszelkie pojęcie.”\r\n\r\n \r\n\r\nProsimy Cię Panie o wiarę. Twoje szaty lśniły na górze, a uczniowie kontemplowali Twoją chwałę, by gdy zobaczą Cię na krzyżu, pojęli wielkość Twej miłości. Przymnóż nam wiary, abyśmy nie przeceniali w naszym życiu tego, co ulotne, ale w postawie uwielbienia czyniły wszystko na Twoją większą chwałę nawet w cierpieniu i ogołoceniu.",
@@ -113,7 +113,7 @@ static mysteryList = [
         meditation3: "„Zaprowadź wszystkie dusze do nieba”\r\n\r\n\r\nStajemy przed Tobą Jezu, aby prosić o łaskę zbawienia dla dusz. Pragniemy być przy Tobie. Powtarzamy za uczniami: „Dobrze nam tu być.” Jak wiele w nas tęsknoty za dobrem, pięknem, czystą miłością. Nasze serca oczekują Ciebie, Twojej bliskości. Jeszcze raz chcemy prosić: „Zaprowadź nas do nieba.”"
     },
     {
-        part: "swiatla",
+        part: "światła",
         nr: "5",
         mystery: "Ustanowienie Eucharystii",
         meditation1: "„Człowiek, który miłuje Boga, nie potrzebuje przypomnienia, aby miłował bliźniego, a ten, kto miłuje bliźniego, co w nim miłuje, jeśli nie Boga? Pan dodał: „Jak ja was umiłowałem”. Co w nas bowiem On umiłował, jeśli nie Boga? - mówi św. Augustyn - Umiłował nie to, co mieliśmy, ale to, co będziemy mieć, aby nas doprowadzić tam, gdzie Bóg będzie wszystkim we wszystkich. Tak samo bowiem słusznie mówi się o lekarzu, że miłuje chorych: a co w nich miłuje, jeśli nie uzdrowienie, którego pragnie dokonać, a nie chorobę, którą przyszedł wyrzucić? Tak więc i my miłujmy siebie nawzajem, abyśmy, na tyle, na ile to możliwe, pociągali siebie nawzajem przez miłość i troskę do Boga, którego w sobie mamy.”\r\n\r\n\r\n\r\nProsimy Cię Panie o miłość. Jezu z Wieczernika, naucz nas jak Ty obmywać nogi naszym bliźnim, jak szczerze miłować w klęsce, stracie i bólu. Prosimy Cię Panie o miłość. Niech Eucharystia uczy nas jak adorować Ciebie i tracić życie dla bliźnich. Pomóż nam, Chryste Eucharystyczny, odkryć radość w miłości Boga i bliźniego.",
