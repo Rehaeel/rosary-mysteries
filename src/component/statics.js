@@ -194,6 +194,29 @@ export default class Statics {
             </b>
             Oni jednak nie zrozumieli tego, co im powiedział. Potem poszedł z
             nimi i wrócił do Nazaretu; i był im poddany. A Matka Jego chowała
+            wiernie wszystkie te wspomnienia w swym sercu”. „Rodzice Jego
+            chodzili co roku do Jerozolimy na Święto Paschy. Gdy miał lat
+            dwanaście, udali się tam zwyczajem świątecznym. Kiedy wracali po
+            skończonych uroczystościach, został Jezus w Jerozolimie, a tego nie
+            zauważyli Jego Rodzice. Przypuszczając, że jest w towarzystwie
+            pątników, uszli dzień drogi i szukali Go wśród krewnych i znajomych.
+            Gdy Go nie znaleźli, wrócili do Jerozolimy szukając Go. Dopiero po
+            trzech dniach odnaleźli Go w świątyni, gdzie siedział między
+            nauczycielami, przysłuchiwał się im i zadawał pytania. Wszyscy zaś,
+            którzy Go słuchali, byli zdumieni bystrością Jego umysłu i
+            odpowiedziami. Na ten widok zdziwili się bardzo, a Jego Matka rzekła
+            do Niego:{' '}
+            <b>
+              «Synu, czemuś nam to uczynił? Oto ojciec Twój i ja z bólem serca
+              szukaliśmy Ciebie»
+            </b>
+            . Lecz On im odpowiedział:{' '}
+            <b>
+              «Czemuście Mnie szukali? Czy nie wiedzieliście, że powinienem być
+              w tym, co należy do mego Ojca?»
+            </b>
+            Oni jednak nie zrozumieli tego, co im powiedział. Potem poszedł z
+            nimi i wrócił do Nazaretu; i był im poddany. A Matka Jego chowała
             wiernie wszystkie te wspomnienia w swym sercu”.
           </p>
         </>

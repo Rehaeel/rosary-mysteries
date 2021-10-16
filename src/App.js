@@ -217,12 +217,14 @@ export default class App extends React.Component {
               document.getElementById('error')
             )
           : undefined}
+
         {this.state.fragmentVisibility ? (
           <>
             {ReactDOM.createPortal(
               <Backdrop onClickHanddler={this.hideFragment} />,
               document.getElementById('backdrop')
             )}
+
             {ReactDOM.createPortal(
               <MysteryFragment onClickHanddler={this.hideFragment}>
                 {this.state.todayMystery.fragment}
@@ -231,6 +233,7 @@ export default class App extends React.Component {
             )}
           </>
         ) : undefined}
+
         <Menu
           customBurgerIcon={false}
           customCrossIcon={false}
