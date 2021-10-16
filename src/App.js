@@ -205,11 +205,18 @@ export default class App extends React.Component {
   render() {
     return (
       <>
-        <Alert
-          alertOverlayDisplay={this.state.alertVisibility ? 'flex' : 'none'}
-          okClicked={this.startAgain}
-          cancelClicked={this.hideAlert}
-        />
+        {this.state.alertVisibility
+          ? ReactDOM.createPortal(
+              <Alert
+                alertOverlayDisplay={
+                  this.state.alertVisibility ? 'flex' : 'none'
+                }
+                okClicked={this.startAgain}
+                cancelClicked={this.hideAlert}
+              />,
+              document.getElementById('error')
+            )
+          : undefined}
         {this.state.fragmentVisibility ? (
           <>
             {ReactDOM.createPortal(
@@ -238,9 +245,7 @@ export default class App extends React.Component {
             <h4>Dzisiejsza tajemnica</h4>
           </NavLink>
           {/* <NavLink to="">
-            <h4 onClick={(state) => this.showAlert(state)}>
-              Zacznij od nowa
-            </h4>
+            <h4 onClick={state => this.showAlert(state)}>Zacznij od nowa</h4>
           </NavLink> */}
           <NavLink to="/kontakt" onClick={state => this.showMenu(state)}>
             <h4>Masz pomysł? Napisz!</h4>
