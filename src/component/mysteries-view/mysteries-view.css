@@ -1,141 +1,151 @@
 .mysteries-view {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: max-content;
-    justify-items: center;
-    width: 600px;
-    height: fit-content;
-    max-height: 90vh;
-    background-color: #fff;
-    /* box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);    there is used background in app under rendered components*/
-    border-radius: 15px 30px 30px 30px;
-    padding: 0 40px 0 40px;
-    color: #000;
-    border-bottom: 40px solid #fff;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content;
+  justify-items: center;
+  width: 600px;
+  height: fit-content;
+  max-height: 90vh;
+  background-color: #fff;
+  /* box-shadow: 0 4px 50px 20px rgba(0, 0, 0, 0.25);    there is used background in app under rendered components*/
+  border-radius: 15px 30px 30px 30px;
+  padding: 0 40px 0 40px;
+  color: #000;
+  border-bottom: 40px solid #fff;
 }
 
-.mysteries-view>h1 {
-    width: fit-content;
-    filter: drop-shadow(4px 4px 8px #0048b41f);
-    width: 110%;
-    text-align: center;
-    margin-top: 30px;
-    line-height: 1.2em;
+.mysteries-view > h1 {
+  width: fit-content;
+  filter: drop-shadow(4px 4px 8px #0048b41f);
+  width: 110%;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.2em;
 }
 
 .meditation {
-    position: relative;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    max-height: fit-content;
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  max-height: fit-content;
 }
 
-.meditation>h3 {
-    margin-bottom: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    padding-top: 15px;
-    width: 100%;
-    font-style: italic;
-    top: 0;
-    color: rgba(0,0,0,.65);
-    text-align: center;
+.meditation > h3 {
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 15px;
+  width: 100%;
+  font-style: italic;
+  top: 0;
+  color: rgba(0, 0, 0, 0.65);
+  text-align: center;
 }
 
-.mysteries-view>h3,
-.mysteries-view>h2 {
-    text-align: center;
+.mysteries-view > h3,
+.mysteries-view > h2 {
+  text-align: center;
 }
 
-.mysteries-view>h2:first-of-type {
-    width: fit-content;
-    box-shadow: 0 0 10px 10px rgba(0, 72, 180, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    background: linear-gradient(160deg, rgb(0, 72, 180, 0.5) 0%, rgba(215, 0, 64, 0.5) 100%);
-    padding: 10px 20px;
-    color: #fff;
-    filter: drop-shadow(0 0 2px #000);
-    margin: 10px;
-    border-radius: 15px;
+.mysteries-view > h2:first-of-type {
+  width: fit-content;
+  box-shadow: 0 0 10px 10px rgba(0, 72, 180, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    160deg,
+    rgb(0, 72, 180, 0.5) 0%,
+    rgba(215, 0, 64, 0.5) 100%
+  );
+  padding: 10px 20px;
+  color: #fff;
+  filter: drop-shadow(0 0 2px #000);
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
-.mysteries-view>h3 {
-    color: rgba(0, 0, 0, 0.65);
-    font-style: italic;
+.mysteries-view > h2:first-of-type:hover {
+  transform: scale(1.02);
 }
 
-.mysteries-view>p {
-    color: rgba(0,0,0,0.35);
-    font-style: italic;
+.mysteries-view > h3 {
+  color: rgba(0, 0, 0, 0.65);
+  font-style: italic;
 }
 
-
-.mysteries-view>button {
-    border: 0;
-    padding: 15px 30px;
-    border-radius: 15px;
-    font-size: 0.84em;
-    background-color: var(--red-color);
-    color: #fff;
-    transition: all .5s ease
+.mysteries-view > p {
+  color: rgba(0, 0, 0, 0.35);
+  font-style: italic;
 }
 
-.mysteries-view>button:hover {
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+.mysteries-view > button {
+  border: 0;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 0.84em;
+  background-color: var(--red-color);
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
-.mysteries-view>button:active {
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+.mysteries-view > button:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.mysteries-view > button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .szczalka {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 45px;
-    font-size: 2em;
-    text-align: center;
-    background-color: rgba(215, 0, 64, 0.2);
-    padding-bottom: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 50%;
-    margin-top: 10px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 45px;
+  font-size: 2em;
+  text-align: center;
+  background-color: rgba(215, 0, 64, 0.2);
+  padding-bottom: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
 }
 
 /********************** MOBILE *********************/
-@media screen and (max-width:980px) {
-    .mysteries-view p:first-of-type {
-        justify-self: end;
-        right: 15px;
-    }
+@media screen and (max-width: 980px) {
+  .mysteries-view p:first-of-type {
+    justify-self: end;
+    right: 15px;
+  }
 
-    .szczalka {
-        padding-bottom: 0;
-        width: 40px;
-    }
+  .szczalka {
+    padding-bottom: 0;
+    width: 40px;
+  }
 }
 
 /********************** MOBILE *********************/
-@media screen and (max-width:765px) {
-    .mysteries-view-mobile {
-        overflow-y: scroll;
-    }
+@media screen and (max-width: 765px) {
+  .mysteries-view-mobile {
+    overflow-y: scroll;
+  }
 
-    .mysteries-view {
-        width: 95vw;
-        margin: 2% 7%;
-        padding: 0 6%;
-        border-bottom: 30px solid #fff;
-    }
+  .mysteries-view {
+    width: 95vw;
+    margin: 2% 7%;
+    padding: 0 6%;
+    border-bottom: 30px solid #fff;
+  }
 
-    .mysteries-view>h1 {
-        margin-top: 30px;
-        margin-bottom: 0;
-    }
+  .mysteries-view > h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }

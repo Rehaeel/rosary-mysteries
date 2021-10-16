@@ -1,0 +1,34 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  z-index: 998;
+}
+
+.mystery-fragment {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(620px, calc(90% - 60px));
+  height: min(fit-content, 95%);
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 999;
+  overflow-y: auto;
+  line-height: 1.4em;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  font-size: 1.6em;
+  cursor: pointer;
+}
