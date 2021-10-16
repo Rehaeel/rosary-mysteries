@@ -12,7 +12,7 @@
   border-radius: 15px 30px 30px 30px;
   padding: 0 40px 0 40px;
   color: #000;
-  border-bottom: 40px solid #fff;
+  border-bottom: 40px solid transparent;
 }
 
 .mysteries-view > h1 {
@@ -141,7 +141,7 @@
     width: 95vw;
     margin: 2% 7%;
     padding: 0 6%;
-    border-bottom: 30px solid #fff;
+    border-bottom: 30px solid transparent;
   }
 
   .mysteries-view > h1 {
