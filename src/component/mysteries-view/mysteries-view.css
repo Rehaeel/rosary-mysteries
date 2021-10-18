@@ -66,6 +66,7 @@
 }
 
 .todays-mistery {
+  display: inline-block;
   width: fit-content;
   padding: 10px 20px;
   color: #fff;
@@ -80,15 +81,11 @@
   transform: scale(1.02);
 }
 
-.todays-mistery > h2,
-.todays-mistery > div {
-  display: inline-block;
-}
-
-.todays-mistery > div {
-  margin-left: 15px;
-  font-size: 1.6em;
+.todays-mistery:after {
+  content: '⇩';
+  padding-left: 10px;
   animation: arrowAnimation 2s ease-out infinite;
+  display: inline-block;
 }
 
 .mysteries-view > h3 {

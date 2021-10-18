@@ -61,15 +61,12 @@ export default class MysteriesView extends React.Component {
         />
         <h1> Dzisiejsza tajemnica: </h1>
         <h3> tajemnice {this.props.part.slice(1)}: </h3>
-        <div
+        <h2
           onClick={this.props.onFragmentClickHandler}
           className="todays-mistery button-colored"
         >
-          <h2>
-            {`${this.props.todayMystery.nr}. ${this.props.todayMystery.mystery}`}
-          </h2>
-          <ArrowAnimation>⇩</ArrowAnimation>
-        </div>
+          {`${this.props.todayMystery.nr}. ${this.props.todayMystery.mystery}`}
+        </h2>
         <div
           className="szczalka button-colored"
           onClick={() => this.toggleMeditationVisibility()}
