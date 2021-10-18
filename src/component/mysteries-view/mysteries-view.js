@@ -61,11 +61,17 @@ export default class MysteriesView extends React.Component {
         />
         <h1> Dzisiejsza tajemnica: </h1>
         <h3> tajemnice {this.props.part.slice(1)}: </h3>
-        <h2 onClick={this.props.onFragmentClickHandler}>
-          {this.props.todayMystery.nr + '. ' + this.props.todayMystery.mystery}{' '}
-        </h2>
         <div
-          className="szczalka"
+          onClick={this.props.onFragmentClickHandler}
+          className="todays-mistery button-colored"
+        >
+          <h2>
+            {`${this.props.todayMystery.nr}. ${this.props.todayMystery.mystery}`}
+          </h2>
+          <ArrowAnimation>⇩</ArrowAnimation>
+        </div>
+        <div
+          className="szczalka button-colored"
           onClick={() => this.toggleMeditationVisibility()}
           style={{
             transform: this.meditationProps(
@@ -93,3 +99,7 @@ export default class MysteriesView extends React.Component {
     );
   }
 }
+
+const ArrowAnimation = props => {
+  return <div className="arrow-animation">{props.children}</div>;
+};

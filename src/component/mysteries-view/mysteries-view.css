@@ -1,3 +1,15 @@
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 .mysteries-view {
   position: relative;
   display: grid;
@@ -20,7 +32,7 @@
   filter: drop-shadow(4px 4px 8px #0048b41f);
   width: 110%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1em;
   line-height: 1.2em;
 }
 
@@ -30,6 +42,11 @@
   width: 100%;
   overflow: hidden;
   max-height: fit-content;
+}
+
+.meditation > p {
+  line-height: 1.6em;
+  text-align: justify;
 }
 
 .meditation > h3 {
@@ -48,18 +65,10 @@
   text-align: center;
 }
 
-.mysteries-view > h2:first-of-type {
+.todays-mistery {
   width: fit-content;
-  box-shadow: 0 0 10px 10px rgba(0, 72, 180, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  background: linear-gradient(
-    160deg,
-    rgb(0, 72, 180, 0.5) 0%,
-    rgba(215, 0, 64, 0.5) 100%
-  );
   padding: 10px 20px;
   color: #fff;
-  filter: drop-shadow(0 0 2px #000);
   margin: 10px;
   border-radius: 15px;
   cursor: pointer;
@@ -67,8 +76,19 @@
   transition: all 0.5s ease;
 }
 
-.mysteries-view > h2:first-of-type:hover {
+.todays-mistery:hover {
   transform: scale(1.02);
+}
+
+.todays-mistery > h2,
+.todays-mistery > div {
+  display: inline-block;
+}
+
+.todays-mistery > div {
+  margin-left: 15px;
+  font-size: 1.6em;
+  animation: arrowAnimation 2s ease-out infinite;
 }
 
 .mysteries-view > h3 {
@@ -108,14 +128,13 @@
   width: 45px;
   font-size: 2em;
   text-align: center;
-  background-color: rgba(215, 0, 64, 0.2);
   padding-bottom: 3px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   margin-top: 10px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 /********************** MOBILE *********************/
