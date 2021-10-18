@@ -96,7 +96,3 @@ export default class MysteriesView extends React.Component {
     );
   }
 }
-
-const ArrowAnimation = props => {
-  return <div className="arrow-animation">{props.children}</div>;
-};
