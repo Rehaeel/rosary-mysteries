@@ -1,90 +1,93 @@
 .App {
-    margin:0;
-    padding: 0;
-    width: 100%;
-    height: calc(var(--vh, 1vh) * 100);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(rgba(0, 133, 255, 0.5), var(--blue-color));
-    background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(rgba(0, 133, 255, 0.5), var(--blue-color));
+  background-attachment: fixed;
 }
 
 .bm-menu-wrap {
-    background-color:#fff;
+  background-color: #fff;
 }
 
 #react-burger-menu-btn {
-    display: none;
+  display: none;
 }
 
 .bm-item-list {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 90% !important;
+  margin: 10% auto 0 auto;
+  overflow: hidden;
+  color: #333;
 }
 
 .bm-item-list > *:focus-visible {
-    outline: 0;
+  outline: 0;
 }
 
 .bm-item-list > * {
-    width: fit-content;
-    transform: scale(1);
-    transition: all .5s ease;
+  width: fit-content;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
 .bm-item-list > * {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .bm-item-list > *:hover {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .bm-item-list > *:not(:last-of-type) {
-    border-bottom:1px solid rgba(0, 133, 255, 0.5);
-    margin-block-start: 0.6em;
-    margin-block-end: 0.6em;
+  border-bottom: 1px solid rgba(0, 133, 255, 0.5);
+  margin-block-start: 0.6em;
+  margin-block-end: 0.6em;
 }
 
-.bm-item-list > * {cursor: pointer; position: relative;}
+.bm-item-list > * {
+  cursor: pointer;
+  position: relative;
+}
 
 /* .bm-item-list:first-child {
     margin-top: 50px;
 } */
 
 .bm-item-list > *:after {
-    content: '>';
-    position: absolute;
-    right: 0px;
-    top: 13px;
-    opacity: 0;
-    font-size: 1.4em;
-    transition: all .5s ease;
+  content: '>';
+  position: absolute;
+  right: 0px;
+  top: 13px;
+  opacity: 0;
+  font-size: 1.4em;
+  transition: all 0.5s ease;
 }
 .bm-item-list > *:hover:after {
-    right: -30px;
-    opacity: 1;
+  right: -30px;
+  opacity: 1;
 }
 
 .bm-item:last-of-type {
-    position:absolute;
-    bottom: 10px;
-    font-size: 90%;
-    color: hsl(0, 0%, 50%);
+  position: absolute;
+  bottom: 30px;
+  font-size: 90%;
+  color: hsl(0, 0%, 50%);
 }
 
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
 
 .visible {
-    opacity: 1;
-    transition: all .5s ease-out;
+  opacity: 1;
+  transition: all 0.5s ease-out;
 }
