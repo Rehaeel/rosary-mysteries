@@ -111,6 +111,7 @@ export default class App extends React.Component {
       countMysteries =
         HowManyWeekdays(1, startingDay) + HowManyWeekdays(6, startingDay);
       if (countMysteries > 5) {
+        if (countMysteries % 5 === 0) return 5;
         countMysteries = countMysteries % 5;
         return countMysteries;
       } else {
@@ -120,6 +121,7 @@ export default class App extends React.Component {
       countMysteries =
         HowManyWeekdays(2, startingDay) + HowManyWeekdays(5, startingDay);
       if (countMysteries > 5) {
+        if (countMysteries % 5 === 0) return 5;
         countMysteries = countMysteries % 5;
         return countMysteries;
       } else {
@@ -129,6 +131,7 @@ export default class App extends React.Component {
       countMysteries =
         HowManyWeekdays(3, startingDay) + HowManyWeekdays(0, startingDay);
       if (countMysteries > 5) {
+        if (countMysteries % 5 === 0) return 5;
         countMysteries = countMysteries % 5;
         return countMysteries;
       } else {
@@ -137,6 +140,7 @@ export default class App extends React.Component {
     } else if (today === 4) {
       countMysteries = HowManyWeekdays(4, startingDay);
       if (countMysteries > 5) {
+        if (countMysteries % 5 === 0) return 5;
         countMysteries = countMysteries % 5;
         return countMysteries;
       } else {
@@ -200,6 +204,7 @@ export default class App extends React.Component {
     this.returnMystery();
     await this.fetchStartingDay();
     await this.returnMystery();
+    console.log(this.state.todayMystery);
   };
 
   render() {
