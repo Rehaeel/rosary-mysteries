@@ -6,8 +6,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(rgba(0, 133, 255, 0.5), var(--blue-color));
-  background-attachment: fixed;
+  background: transparent;
+  z-index: 1;
+}
+
+.background_img {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: url('./component/photos/Background.jpg') center center no-repeat
+      fixed,
+    radial-gradient(rgba(0, 133, 255, 0.5), var(--blue-color));
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(10px);
+  transform: scale(1.09);
+}
+.jezus {
+  position: fixed;
+  display: block;
+  width: 30%;
+  left: -2.5%;
+  bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .jezus {
+    display: none;
+  }
 }
 
 .bm-menu-wrap {

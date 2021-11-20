@@ -15,6 +15,7 @@ import {
   Backdrop,
   MysteryFragment,
 } from './component/mystery-fragment/mystery-fragment';
+import Jezus from './component/photos/Jezus.png';
 
 export default class App extends React.Component {
   constructor() {
@@ -30,6 +31,7 @@ export default class App extends React.Component {
         nr: '1',
         mystery: 'tajemnica',
       },
+      displayJezus: false,
     };
     this.mysteryList = Object(Statics.mysteryList);
 
@@ -63,11 +65,11 @@ export default class App extends React.Component {
   }
 
   showFragment() {
-    this.setState({ fragmentVisibility: true });
+    this.setState({ fragmentVisibility: true, displayJezus: true });
   }
 
   hideFragment() {
-    this.setState({ fragmentVisibility: false });
+    this.setState({ fragmentVisibility: false, displayJezus: false });
   }
 
   showMenu(state) {
@@ -264,6 +266,12 @@ export default class App extends React.Component {
           </NavLink>
         </Menu>
 
+        <div className="background_img"></div>
+        {this.state.displayJezus ? (
+          <img className="jezus" src={Jezus} alt="Jezus" />
+        ) : (
+          ''
+        )}
         <div className="App">
           {/* <div className="content-shadow"> */}
           <Route exact path="/">
