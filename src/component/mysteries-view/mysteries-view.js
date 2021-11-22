@@ -33,7 +33,11 @@ export default class MysteriesView extends React.Component {
     this.setState({
       meditationVisibility: !this.state.meditationVisibility,
     });
-    this.shuffleMeditation();
+    if (this.state.meditationVisibility) {
+      setTimeout(() => this.shuffleMeditation(), 500);
+    } else {
+      this.shuffleMeditation();
+    }
   }
 
   meditationProps(ifTrue, ifFalse) {
