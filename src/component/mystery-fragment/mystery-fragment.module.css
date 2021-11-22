@@ -18,12 +18,11 @@
   width: min(620px, calc(90% - 60px));
   height: fit-content;
   max-height: calc(95% - 60px);
-  padding: 30px;
-  padding-bottom: 0;
+  padding: 0 30px;
   background-color: #fff;
   border-radius: 15px;
   z-index: 999;
-  overflow-y: auto;
+  overflow: visible;
   line-height: 1.6em;
   border-bottom: 30px solid transparent;
   text-align: justify;
@@ -34,15 +33,19 @@
   margin-block-end: 0;
 }
 
+.mystery-fragment > p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
 .close {
-  position: relative;
+  position: absolute;
   float: right;
   background-color: #fff;
   padding: 8px 12px;
   margin-left: 15px;
-  margin-bottom: 5px;
   border-radius: 15px;
-  transform: translateY(-5px);
+  top: -15px;
+  right: -15px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   gap: 5px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
@@ -53,7 +56,7 @@
 @media screen and (max-width: 980px) {
   .mystery-fragment {
     width: calc(90% - 40px);
-    padding: 30px 20px 0 20px;
+    padding: 0 20px;
     border-bottom: 30px solid #fff;
   }
 }
