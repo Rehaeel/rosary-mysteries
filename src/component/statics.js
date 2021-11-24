@@ -22,7 +22,7 @@ export default class Statics {
             rzekł:{' '}
             <b>
               «Bądź pozdrowiona, pełna łaski, Pan z Tobą, «błogosławiona jesteś
-              między niewiastami».
+              między niewiastami».{' '}
             </b>
             Ona zmieszała się na te słowa i rozważała, co miałoby znaczyć to
             pozdrowienie. Lecz anioł rzekł do Niej:{' '}
@@ -31,7 +31,7 @@ export default class Statics {
               i porodzisz Syna, któremu nadasz imię Jezus. Będzie On wielki i
               będzie nazwany Synem Najwyższego, a Pan Bóg da Mu tron Jego
               praojca, Dawida. Będzie panował nad domem Jakuba na wieki, a Jego
-              panowaniu nie będzie końca».
+              panowaniu nie będzie końca».{' '}
             </b>
             Na to Maryja rzekła do anioła:{' '}
             <b>«Jakże się to stanie, skoro nie znam męża?»</b> Anioł Jej
@@ -41,12 +41,12 @@ export default class Statics {
               Dlatego też Święte, które się narodzi, będzie nazwane Synem Bożym.
               A oto również krewna Twoja, Elżbieta, poczęła w swej starości syna
               i jest już w szóstym miesiącu ta, która uchodzi za niepłodną. Dla
-              Boga bowiem nie ma nic niemożliwego».
+              Boga bowiem nie ma nic niemożliwego».{' '}
             </b>
             Na to rzekła Maryja:{' '}
             <b>
               «Oto Ja służebnica Pańska, niech Mi się stanie według twego
-              słowa!»
+              słowa!»{' '}
             </b>
             Wtedy odszedł od Niej anioł”.
           </p>
@@ -78,7 +78,7 @@ export default class Statics {
               mnie? Oto, skoro głos Twego pozdrowienia zabrzmiał w moich uszach,
               poruszyło się z radości dzieciątko w moim łonie. Błogosławiona
               jesteś, któraś uwierzyła, że spełnią się słowa powiedziane Ci od
-              Pana»
+              Pana»{' '}
             </b>
             „.
           </p>
@@ -144,16 +144,15 @@ export default class Statics {
               «Teraz, o Władco, pozwól odejść słudze Twemu w pokoju, według
               Twojego słowa. Bo moje oczy ujrzały Twoje zbawienie, któreś
               przygotował wobec wszystkich narodów: światło na oświecenie pogan
-              i chwałę ludu Twego, Izraela»
+              i chwałę ludu Twego, Izraela».{' '}
             </b>
-            . A Jego ojciec i Matka dziwili się temu, co o Nim mówiono. Symeon
-            zaś błogosławił Ich i rzekł do Maryi, Matki Jego:{' '}
+            A Jego ojciec i Matka dziwili się temu, co o Nim mówiono. Symeon zaś
+            błogosławił Ich i rzekł do Maryi, Matki Jego:{' '}
             <b>
               «Oto Ten przeznaczony jest na upadek i na powstanie wielu w
               Izraelu, i na znak, któremu sprzeciwiać się będą. A Twoją duszę
-              miecz przeniknie, aby na jaw wyszły zamysły serc wielu»
+              miecz przeniknie, aby na jaw wyszły zamysły serc wielu»„.
             </b>
-            „.
           </p>
         </>
       ),
@@ -185,12 +184,12 @@ export default class Statics {
             Matka rzekła do Niego:{' '}
             <b>
               «Synu, czemuś nam to uczynił? Oto ojciec Twój i ja z bólem serca
-              szukaliśmy Ciebie»
+              szukaliśmy Ciebie»{' '}
             </b>
             . Lecz On im odpowiedział:{' '}
             <b>
               «Czemuście Mnie szukali? Czy nie wiedzieliście, że powinienem być
-              w tym, co należy do mego Ojca?»
+              w tym, co należy do mego Ojca?»{' '}
             </b>
             Oni jednak nie zrozumieli tego, co im powiedział. Potem poszedł z
             nimi i wrócił do Nazaretu; i był im poddany. A Matka Jego chowała
@@ -217,7 +216,7 @@ export default class Statics {
             ciemno, Maria Magdalena udała się do grobu i zobaczyła kamień
             odsunięty od grobu. Pobiegła więc i przybyła do Szymona Piotra i do
             drugiego ucznia, którego Jezus kochał, i rzekła do nich:{' '}
-            <b>«Zabrano Pana z grobu i nie wiemy, gdzie Go położono»</b>.
+            <b>«Zabrano Pana z grobu i nie wiemy, gdzie Go położono»</b>.{' '}
             Wyszedł więc Piotr i ów drugi uczeń i szli do grobu. Biegli oni
             obydwaj razem, lecz ów drugi uczeń wyprzedził Piotra i przybył
             pierwszy do grobu. A kiedy się nachylił, zobaczył leżące płótna,
@@ -250,7 +249,7 @@ export default class Statics {
             <b>
               «To właśnie znaczyły słowa, które mówiłem do was, gdy byłem
               jeszcze z wami: Musi się wypełnić wszystko, co napisane jest o
-              Mnie w Prawie Mojżesza, u Proroków i w Psalmach»
+              Mnie w Prawie Mojżesza, u Proroków i w Psalmach»{' '}
             </b>
             . Wtedy oświecił ich umysły, aby rozumieli Pisma, i rzekł do nich:{' '}
             <b>
@@ -259,7 +258,7 @@ export default class Statics {
               odpuszczenie grzechów wszystkim narodom, począwszy od Jerozolimy.
               Wy jesteście świadkami tego. Oto Ja ześlę na was obietnicę mojego
               Ojca. Wy zaś pozostańcie w mieście, aż będziecie przyobleczeni
-              mocą z wysoka»
+              mocą z wysoka»{' '}
             </b>
             . Potem wyprowadził ich ku Betanii i podniósłszy ręce błogosławił
             ich. A kiedy ich błogosławił, rozstał się z nimi i został uniesiony
@@ -321,9 +320,8 @@ export default class Statics {
               wywyższa pokornych. Głodnych nasyca dobrami, a bogatych z niczym
               odprawia. Ujął się za sługą swoim, Izraelem, pomny na miłosierdzie
               swoje – jak przyobiecał naszym ojcom – na rzecz Abrahama i jego
-              potomstwa na wieki».
+              potomstwa na wieki».”
             </b>
-            ”
           </p>
         </>
       ),
@@ -370,13 +368,13 @@ export default class Statics {
               jestem godzien rozwiązać rzemyka u sandałów. On chrzcić was będzie
               Duchem Świętym i ogniem. Ma On wiejadło w ręku dla oczyszczenia
               swego omłotu: pszenicę zbierze do spichlerza, a plewy spali w
-              ogniu nieugaszonym»
+              ogniu nieugaszonym».{' '}
             </b>
-            . Wiele też innych napomnień dawał ludowi i głosił dobrą nowinę.
-            Kiedy cały lud przystępował do chrztu, Jezus także przyjął chrzest.
-            A gdy się modlił, otworzyło się niebo i Duch Święty zstąpił na
-            Niego, w postaci cielesnej niby gołębica, a nieba odezwał się głos:{' '}
-            <b>«Tyś jest mój Syn umiłowany, w Tobie mam upodobanie»</b>. Sam zaś
+            Wiele też innych napomnień dawał ludowi i głosił dobrą nowinę. Kiedy
+            cały lud przystępował do chrztu, Jezus także przyjął chrzest. A gdy
+            się modlił, otworzyło się niebo i Duch Święty zstąpił na Niego, w
+            postaci cielesnej niby gołębica, a nieba odezwał się głos:{' '}
+            <b>«Tyś jest mój Syn umiłowany, w Tobie mam upodobanie».</b> Sam zaś
             Jezus rozpoczynając swoją działalność miał lat około trzydziestu”.
           </p>
         </>
@@ -402,14 +400,14 @@ export default class Statics {
             <b>«Nie mają już wina»</b>. Jezus Jej odpowiedział:{' '}
             <b>
               «Czyż to moja lub Twoja sprawa, Niewiasto? Czyż jeszcze nie
-              nadeszła godzina moja?»
+              nadeszła godzina moja?»{' '}
             </b>
             Wtedy Matka Jego powiedziała do sług:{' '}
             <b>«Zróbcie wszystko, cokolwiek wam powie»</b>. Stało zaś tam sześć
             stągwi kamiennych przeznaczonych do żydowskich oczyszczeń, z których
-            każda mogła pomieścić dwie lub trzy miary. Rzekł do nich Jezus:
+            każda mogła pomieścić dwie lub trzy miary. Rzekł do nich Jezus:{' '}
             <b>«Napełnijcie stągwie wodą!»</b> I napełnili je aż po brzegi.
-            Potem do nich powiedział:
+            Potem do nich powiedział:{' '}
             <b>«Zaczerpnijcie teraz i zanieście staroście weselnemu!»</b> Oni
             zaś zanieśli. A gdy starosta weselny skosztował wody, która stała
             się winem – nie wiedział bowiem, skąd ono pochodzi, ale słudzy,
@@ -417,10 +415,10 @@ export default class Statics {
             powiedział do niego:{' '}
             <b>
               «Każdy człowiek stawia najpierw dobre wino, a gdy się napiją,
-              wówczas gorsze. Ty zachowałeś dobre wino aż do tej pory»
+              wówczas gorsze. Ty zachowałeś dobre wino aż do tej pory».{' '}
             </b>
-            . Taki to początek znaków uczynił Jezus w Kanie Galilejskiej.
-            Objawił swoją chwałę i uwierzyli w Niego Jego uczniowie”.
+            Taki to początek znaków uczynił Jezus w Kanie Galilejskiej. Objawił
+            swoją chwałę i uwierzyli w Niego Jego uczniowie”.
           </p>
         </>
       ),
@@ -471,13 +469,14 @@ export default class Statics {
             rozmawiali z Nim. Wtedy Piotr rzekł do Jezusa:{' '}
             <b>
               «Panie, dobrze, że tu jesteśmy; jeśli chcesz, postawię tu trzy
-              namioty: jeden dla Ciebie, jeden dla Mojżesza i jeden dla Eliasza»
+              namioty: jeden dla Ciebie, jeden dla Mojżesza i jeden dla
+              Eliasza».{' '}
             </b>
-            . Gdy on jeszcze mówił, oto obłok świetlany osłonił ich, a z obłoku
+            Gdy on jeszcze mówił, oto obłok świetlany osłonił ich, a z obłoku
             odezwał się głos:{' '}
             <b>
               «To jest mój Syn umiłowany, w którym mam upodobanie, Jego
-              słuchajcie!»
+              słuchajcie!»{' '}
             </b>
             Uczniowie, słysząc to, upadli na twarz i bardzo się zlękli. A Jezus
             zbliżył się do nich, dotknął ich i rzekł:
@@ -509,9 +508,8 @@ export default class Statics {
               «To jest moja Krew Przymierza, która za wielu będzie wylana.
               Zaprawdę, powiadam wam: Odtąd nie będę już pił z owocu winnego
               krzewu aż do owego dnia, kiedy pić go będę nowy w królestwie
-              Bożym»
+              Bożym»„.
             </b>
-            „.
           </p>
         </>
       ),
@@ -535,20 +533,20 @@ export default class Statics {
             Wziął ze sobą Piotra, Jakuba i Jana i począł drżeć, i odczuwać
             trwogę. I rzekł do nich:{' '}
             <b>
-              «Smutna jest moja dusza aż do śmierci; zostańcie tu i czuwajcie!»
+              «Smutna jest moja dusza aż do śmierci; zostańcie tu i czuwajcie!»{' '}
             </b>
             I odszedłszy nieco dalej, upadł na ziemię i modlił się, żeby – jeśli
             to możliwe – ominęła Go ta godzina. I mówił:{' '}
             <b>
               «Abba, Ojcze, dla Ciebie wszystko jest możliwe, zabierz ten
               kielich ode Mnie! Lecz nie to, co Ja chcę, ale to, co Ty [niech
-              się stanie]!»
+              się stanie]!»{' '}
             </b>
             Potem wrócił i zastał ich śpiących. Rzekł do Piotra:{' '}
             <b>
               «Szymonie, śpisz? Jednej godziny nie mogłeś czuwać? Czuwajcie i
               módlcie się, abyście nie ulegli pokusie; duch wprawdzie ochoczy,
-              ale ciało słabe»
+              ale ciało słabe»{' '}
             </b>
             . Odszedł znowu i modlił się, powtarzając te same słowa. Gdy wrócił,
             zastał ich śpiących, gdyż oczy ich były snem zmorzone, i nie
@@ -557,9 +555,8 @@ export default class Statics {
             <b>
               «Śpicie dalej i odpoczywacie? Dosyć! Przyszła godzina, oto Syn
               Człowieczy będzie wydany w ręce grzeszników. Wstańcie, chodźmy,
-              oto zbliża się mój zdrajca»
+              oto zbliża się mój zdrajca»„.
             </b>
-            „.
           </p>
         </>
       ),
@@ -583,26 +580,26 @@ export default class Statics {
             imieniem Barabasz. Gdy się więc zebrali, spytał ich Piłat:{' '}
             <b>
               «Którego chcecie, żebym wam uwolnił, Barabasza czy Jezusa, zwanego
-              Mesjaszem?»
+              Mesjaszem?»{' '}
             </b>
             Wiedział bowiem, że przez zawiść Go wydali. A gdy on odbywał przewód
             sądowy, żona jego przysłała mu ostrzeżenie:{' '}
             <b>
               «Nie miej nic do czynienia z tym Sprawiedliwym, bo dzisiaj we śnie
-              wiele nacierpiałam się z Jego powodu»
+              wiele nacierpiałam się z Jego powodu».{' '}
             </b>
-            . Tymczasem arcykapłani i starsi namówili tłumy, żeby prosiły o
+            Tymczasem arcykapłani i starsi namówili tłumy, żeby prosiły o
             Barabasza, a domagały się śmierci Jezusa. Pytał ich namiestnik:{' '}
-            <b>«Którego z tych dwóch chcecie, żebym wam uwolnił?» </b>
+            <b>«Którego z tych dwóch chcecie, żebym wam uwolnił?» </b>{' '}
             Odpowiedzieli: «<b>Barabasza»</b>. Rzekł do nich Piłat:{' '}
-            <b>«Cóż więc mam uczynić z Jezusem, którego nazywają Mesjaszem?»</b>
-            Zawołali wszyscy: <b>«Na krzyż z Nim!»</b> Namiestnik odpowiedział:
+            <b>«Cóż więc mam uczynić z Jezusem, którego nazywają Mesjaszem?»</b>{' '}
+            Zawołali wszyscy: <b>«Na krzyż z Nim!»</b> Namiestnik odpowiedział:{' '}
             <b>«Cóż właściwie złego uczynił?»</b> Lecz oni jeszcze głośniej
             krzyczeli: <b>«Na krzyż z Nim!»</b> Piłat widząc, że nic nie osiąga,
             a wzburzenie raczej wzrasta, wziął wodę i umył ręce wobec tłumu,
             mówiąc:{' '}
-            <b>«Nie jestem winny krwi tego Sprawiedliwego. To wasza rzecz»</b>.
-            A cały lud zawołał: <b>«Krew Jego na nas i na dzieci nasze»</b>.
+            <b>«Nie jestem winny krwi tego Sprawiedliwego. To wasza rzecz»</b>.{' '}
+            A cały lud zawołał: <b>«Krew Jego na nas i na dzieci nasze»</b>.{' '}
             Wówczas uwolnił im Barabasza, a Jezusa kazał ubiczować i wydał na
             ukrzyżowanie”.
           </p>
@@ -653,9 +650,8 @@ export default class Statics {
             nad Nim. Lecz Jezus zwrócił się do nich i rzekł:{' '}
             <b>
               «Córki jerozolimskie, nie płaczcie nade Mną; płaczcie raczej nad
-              sobą i nad waszymi dziećmi!»
+              sobą i nad waszymi dziećmi!»„.
             </b>
-            „.
           </p>
         </>
       ),
@@ -676,17 +672,17 @@ export default class Statics {
           <p>
             „Gdy przyszli na miejsce, zwane «Czaszką», ukrzyżowali tam Jego i
             złoczyńców, jednego po prawej, drugiego po lewej Jego stronie. Lecz
-            Jezus mówił: <b>«Ojcze, przebacz im, bo nie wiedzą, co czynią»</b>.
+            Jezus mówił: <b>«Ojcze, przebacz im, bo nie wiedzą, co czynią»</b>.{' '}
             Potem rozdzielili między siebie Jego szaty, rzucając losy. Jeden ze
             złoczyńców, których [tam] powieszono, urągał Mu:{' '}
             <b>«Czy Ty nie jesteś Mesjaszem? Wybaw więc siebie i nas»</b>. Lecz
-            drugi, karcąc go, rzekł:
+            drugi, karcąc go, rzekł:{' '}
             <b>
               «Ty nawet Boga się nie boisz, chociaż tę samą karę ponosisz? My
               przecież – sprawiedliwie, odbieramy bowiem słuszną karę za nasze
-              uczynki, ale On nic złego nie uczynił»
+              uczynki, ale On nic złego nie uczynił».{' '}
             </b>
-            . I dodał:
+            I dodał:{' '}
             <b>«Jezu, wspomnij na mnie, gdy przyjdziesz do swego królestwa»</b>.
             Jezus mu odpowiedział:{' '}
             <b>«Zaprawdę, powiadam ci: Dziś ze Mną będziesz w raju»</b>. Było

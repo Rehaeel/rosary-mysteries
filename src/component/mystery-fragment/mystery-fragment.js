@@ -20,11 +20,13 @@ export const MysteryFragment = props => {
   });
 
   return (
-    <div className={classes['mystery-fragment']}>
+    <>
+      <div className={classes['mystery-fragment']}>
+        <div className={classes.container}>{props.children}</div>
+      </div>
       <p className={classes.close} onClick={props.onClickHanddler}>
         X
       </p>
-      {props.children}
-    </div>
+    </>
   );
 };
