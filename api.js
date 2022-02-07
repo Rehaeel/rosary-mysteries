@@ -16,6 +16,8 @@ const mystery = mysql.createConnection({
 
 /////////// USER
 
+// register
+
 app.post('/user', (req, res) => {
 	const { email, password } = req.headers;
 
@@ -41,7 +43,7 @@ app.post('/user', (req, res) => {
 						res.status(400).json(err.message);
 					} else {
 						if (result['affectedRows'] > 0) res.send('success!');
-                        else res.send(result)
+						else res.send(result);
 					}
 				}
 			);
@@ -49,6 +51,48 @@ app.post('/user', (req, res) => {
 		.catch((err) => {
 			res.status(400).json(err);
 		});
+});
+
+// login
+
+app.get('/user', (req, res) => {
+	const { email, password } = req.headers;
+
+	mystery.query(
+		`SELECT email FROM user WHERE email='${email}' AND password='${password}'`,
+		(err, response) => {
+			if (err) {
+				res.status(404).json(err.message);
+			} else {
+				if (response.length === 0) {
+					res.status(404).json('nie znaleziono użytkownika');
+				} else {
+					res.send('sukces!');
+				}
+			}
+		}
+	);
+});
+
+// from localstorage
+
+app.get('/user/locale', (req, res) => {
+	const { email } = req.headers;
+
+	mystery.query(
+		`SELECT email FROM user WHERE email='${email}'`,
+		(err, response) => {
+			if (err) {
+				res.status(404).json(err.message);
+			} else {
+				if (response.length === 0) {
+					res.status(404).json('nie znaleziono użytkownika');
+				} else {
+					res.send('sukces!');
+				}
+			}
+		}
+	);
 });
 
 /////////// STARTING DAY
