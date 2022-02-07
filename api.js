@@ -14,6 +14,43 @@ const mystery = mysql.createConnection({
 	database: process.env.DB_DATABASE,
 });
 
+/////////// USER
+
+app.post('/user', (req, res) => {
+	const { email, password } = req.headers;
+
+	new Promise((resolve, reject) => {
+		mystery.query(
+			`SELECT email FROM user WHERE email='${email}'`,
+			(err, response) => {
+				if (err) {
+					reject(err.message);
+				} else {
+					if (response.length > 0) {
+						reject('użytkownik jest już zajęty');
+					} else resolve();
+				}
+			}
+		);
+	})
+		.then(() => {
+			mystery.query(
+				`INSERT INTO user (email, password) VALUES ('${email}', '${password}')`,
+				(err, result) => {
+					if (err) {
+						res.status(400).json(err.message);
+					} else {
+						if (result['affectedRows'] > 0) res.send('success!');
+                        else res.send(result)
+					}
+				}
+			);
+		})
+		.catch((err) => {
+			res.status(400).json(err);
+		});
+});
+
 /////////// STARTING DAY
 app.get('/startingday', (req, res) => {
 	const { email } = req.headers;
