@@ -9,7 +9,7 @@ import ContactPage from './component/contact-page/contact-page';
 import { Route, NavLink } from 'react-router-dom';
 import Zrzutka from './component/zrzutka/zrzutka';
 import HowManyWeekdays from './component/mysteries-view/how-many-weekdays';
-import Statics from './component/statics.js';
+import Statics, { MORNING_HOUR_TRESHOLD } from './component/statics.js';
 import ReactGA from 'react-ga';
 import {
   Backdrop,
@@ -48,6 +48,7 @@ export default class App extends React.Component {
     this.returnMystery = this.returnMystery.bind(this);
     this.partChoose = this.partChoose.bind(this);
     this.pullMysteries = this.pullMysteries.bind(this);
+    this.isMorning = this.getToday.bind(this);
   }
 
   updateVH() {
@@ -80,6 +81,18 @@ export default class App extends React.Component {
     this.setState({ menuVisibility: state.isOpen });
   }
 
+  getToday() {
+    let today = new Date().getDay();
+    const yetMorning = new Date().getHours() < MORNING_HOUR_TRESHOLD;
+
+    if (yetMorning) {
+      if (today === 0) today = 6;
+      else today -= 1;
+    }
+
+    return today;
+  }
+
   async startAgain() {
     let date = new Date();
     let dateYear = date.getFullYear();
@@ -107,7 +120,7 @@ export default class App extends React.Component {
 
   returnMysteryNr() {
     let startingDay = this.state.startingDay;
-    const today = new Date().getDay();
+    const today = this.getToday();
     let countMysteries;
     if (today === 1 || today === 6) {
       countMysteries =
@@ -158,7 +171,8 @@ export default class App extends React.Component {
   }
 
   async partChoose() {
-    let today = new Date().getDay();
+    let today = this.getToday();
+
     if (today === 1 || today === 6) {
       await this.setState({
         part: '/radosne',

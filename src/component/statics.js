@@ -1,5 +1,7 @@
 import Sigiel from './mystery-fragment/sigiel/sigiel';
 
+export const MORNING_HOUR_TRESHOLD = 5;
+
 export default class Statics {
   static mysteryList = [
     {
