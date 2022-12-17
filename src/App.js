@@ -34,8 +34,6 @@ export default class App extends React.Component {
       displayJezus: false,
     };
     this.mysteryList = Object(Statics.mysteryList);
-
-    this.updateVH = this.updateVH.bind(this);
     this.showAlert = this.showAlert.bind(this);
     this.hideAlert = this.hideAlert.bind(this);
     this.showFragment = this.showFragment.bind(this);
@@ -43,7 +41,6 @@ export default class App extends React.Component {
     this.showMenu = this.showMenu.bind(this);
     this.handleStateChange = this.handleStateChange.bind(this);
     this.startAgain = this.startAgain.bind(this);
-    this.fetchStartingDay = this.fetchStartingDay.bind(this);
     this.returnMysteryNr = this.returnMysteryNr.bind(this);
     this.returnMystery = this.returnMystery.bind(this);
     this.partChoose = this.partChoose.bind(this);
@@ -51,12 +48,7 @@ export default class App extends React.Component {
     this.isMorning = this.getToday.bind(this);
   }
 
-  updateVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-
-  showAlert(state) {
+  showAlert(_) {
     this.setState(state => ({ menuVisibility: !state.menuVisibility }));
     this.setState({ alertVisibility: true });
   }
@@ -73,7 +65,7 @@ export default class App extends React.Component {
     this.setState({ fragmentVisibility: false, displayJezus: false });
   }
 
-  showMenu(state) {
+  showMenu(_) {
     this.setState(state => ({ menuVisibility: !state.menuVisibility }));
   }
 
@@ -105,7 +97,6 @@ export default class App extends React.Component {
       menuVisibility: false,
       alertVisibility: false,
     });
-    await this.fetchStartingDay();
     this.returnMystery();
   }
 
@@ -170,11 +161,11 @@ export default class App extends React.Component {
     });
   }
 
-  async partChoose() {
+  partChoose() {
     let today = this.getToday();
 
     if (today === 1 || today === 6) {
-      await this.setState({
+      this.setState({
         part: '/radosne',
       });
     } else if (today === 2 || today === 5) {
@@ -214,12 +205,9 @@ export default class App extends React.Component {
 
   componentDidMount = async () => {
     ReactGA.pageview(window.location.pathname + window.location.search);
-    this.updateVH();
     await this.partChoose();
     this.pullMysteries();
     this.returnMystery();
-    await this.fetchStartingDay();
-    await this.returnMystery();
     console.log(this.state.todayMystery);
   };
 
